@@ -1,36 +1,42 @@
 console.log('reading js');
 
-var bugs = []; // array of Jitter objects
+var rain = []; // array of Jitter objects
 
 function setup() {
   var myCanvas = createCanvas(800, 250);
   myCanvas.parent('mySketch');
   // Create objects
   for (var i=0; i<15; i++) {
-    bugs.push(new Jitter());
+    rain.push(new Rain(i*50,i*-50,0));
   }
 }
 
 function draw() {
   background(255);
-  for (var i=0; i<bugs.length; i++) {
-    bugs[i].move();
-    bugs[i].display();
+  for (var i=0; i<rain.length; i++) {
+    if ((mouseX>rain[i].x) && (mouseX<rain[i].x+11) && (mouseY>rain[i].y) && (mouseY<rain[i].y+61)) {
+      rain[i].color= color(244, 95, 66);
+    } else {
+      rain[i].color=color(0);
+    }
+    rain[i].move();
+    rain[i].display();
   }
 }
 
 // Jitter class
-function Jitter() {
-  this.x = 0;
-  this.y = 0;
+function Rain(x,y,c) {
+  this.x = x;
+  this.y = y;
   this.speed = 1;
-  this.color = 0;
+  this.color = c;
 
   this.move = function() {
     this.y+=1.5;
   };
 
   this.display = function() {
+    noStroke();
     fill(this.color)
     rect(this.x, this.y, 20,60);
 
