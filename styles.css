@@ -7,7 +7,6 @@ body {
 }
 
 /* header, title, subtitle */
-
 header div {
   margin: auto;
   width: 800px;
@@ -38,7 +37,6 @@ ul, ol {
 }
 
 /* columns */
-
 #sect {
   margin: auto;
   width: 800px;
@@ -74,12 +72,60 @@ nav ul li a, nav ol li a {
   border-left: 2px solid #a5a5a5;
 }
 
-a:hover {
+a:hover, article .source a:hover, aside a:hover {
   color: #cccccc;
 }
 
-/* footer */
+/* article */
+article {
+  width: 850px;
+  margin: 100px auto;
+}
 
+article h1 {
+  font-size: 30pt;
+}
+
+article h2 {
+  font-size: 20pt;
+  color: #f45f42;
+}
+
+article section {
+  padding-bottom: 50px;
+}
+
+article section img {
+  display: inline-block;
+  text-align: center;
+}
+
+article p {
+  font-size: 13pt;
+}
+
+article .source {
+  font-size: 10pt;
+}
+
+article .source a, aside a {
+  text-decoration: none;
+  color: #f45f42;
+}
+
+/* aside */
+aside {
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: 20px;
+}
+
+aside a {
+  padding: 20px;
+}
+
+/* footer */
 footer {
   margin-top: 65px;
   width: 100%;
