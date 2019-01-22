@@ -92,6 +92,7 @@ article h2 {
 }
 
 article section {
+  margin: auto;
   padding-bottom: 50px;
 }
 
