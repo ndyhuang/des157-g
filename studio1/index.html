@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mad Libs</title>
+  <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/paw.svg" alt="paw print" width="80px" height="72px">
+    <h1>Make a Dog!</h1>
+  </header>
+
+  <img id="avatar" src="images/vague.svg" alt="dog avatar" width="250px" height="250px">
+
+  <form>
+    <fieldset id="name">
+      <label for="name">a name</label>
+      <input type="text" name="name" id="name" required>
+    </fieldset>
+
+    <fieldset id="adjective">
+      <label for="kind">adjective</label>
+      <input type="text" name="adjective" id="adjective" required>
+    </fieldset>
+
+    <fieldset id="number">
+      <label for="number">number</label required>
+      <input type="text" name="number" id="number" required>
+    </fieldset>
+
+    <fieldset id="verb">
+      <label for="verb">verb</label required>
+      <input type="text" name="verb" id="verb" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="noun">noun</label>
+      <input type="text" name="noun" id="noun" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="food">food</label>
+      <input type="text" name="food" id="food" required>
+    </fieldset>
+
+    <fieldset id="adjective">
+      <label for="kind">adjective</label>
+      <input type="text" name="adjective" id="adjective" required>
+    </fieldset>
+
+    <fieldset id="yourname">
+      <label for="yourname">your name</label>
+      <input type="text" name="yourname" id="yourname" required>
+    </fieldset>
+
+    <fieldset id="pick">
+      <label for="select">pick an option that describes you!</label>
+
+      <select name="select">
+        <option value="select">select</option>
+        <option value="active">active</option>
+        <option value="chill">chill</option>
+        <option value="anxious">anxious</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+     <div>
+       <input type="reset" name="reset" value="start over" id="reset">
+       <input type="submit" name="submit" value="meet your new best friend!" id="submit">
+     </div>
+    </fieldset>
+
+  </form>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+        <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

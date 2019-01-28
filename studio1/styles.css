@@ -1,0 +1,113 @@
+body {
+  margin: auto;
+  width: 1366px;
+  height:768px;
+  background: #ffe16d;
+  font-family: 'Concert One', cursive;
+}
+
+/* header */
+
+header {
+  width: 30%;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  display: flex;
+}
+
+h1 {
+  font-size: 40pt;
+  margin-bottom: 2%;
+}
+
+header img {
+  margin: 25px 15px;
+}
+
+#avatar {
+  position: absolute;
+  left: 17%;
+  top: 20%;
+}
+
+/* form */
+
+form {
+  margin: 5% 47%;
+  padding: 10px;
+  width: 30%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-size: 13pt;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  border: none;
+  margin: 2px;
+}
+
+input[type="text"],
+textarea {
+  width: 50%;
+  height: 15px;
+  border-radius: 4px;
+}
+
+#pick {
+  display: inline;
+  margin-bottom: 5px;
+}
+
+#submit, #reset {
+  margin: 10px;
+  width: 97px;
+  height: 50px;
+  padding: 0 5px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 7px;
+
+  font-size: 13pt;
+  font-family: 'Concert One', cursive;
+}
+
+#submit {
+  width: 227px;
+}
+
+#submit:hover, #reset:hover {
+  color: #ffb330;
+}
+
+footer {
+  margin-top: 70px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  margin: 5px 10px;
+}
+
+footer nav ul li a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+footer nav ul li a:hover {
+  color: #ffa100;
+}

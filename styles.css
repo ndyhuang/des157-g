@@ -140,11 +140,17 @@ footer {
 footer nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: center
+  justify-content: center;
 }
 
 footer nav ul li {
   margin: 20px 10px;
+}
+
+footer nav ul li a {
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
 }
 
 footer nav ul li a {
