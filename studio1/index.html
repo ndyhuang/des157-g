@@ -17,7 +17,9 @@
     <h1>Make a Dog!</h1>
   </header>
 
-  <img id="avatar" src="images/vague.svg" alt="dog avatar" width="250" height="250">
+  <section id=image>
+    <img id="avatar" src="images/vague.svg" alt="dog avatar" width="250" height="250">
+  </section>
 
   <form>
     <fieldset>
@@ -31,8 +33,8 @@
     </fieldset>
 
     <fieldset>
-      <label for="number">number</label>
-      <input type="text" name="number" id="number" required>
+      <label for="numb">number</label>
+      <input type="text" name="numb" id="numb" required>
     </fieldset>
 
     <fieldset>
@@ -51,8 +53,14 @@
     </fieldset>
 
     <fieldset>
-      <label for="adjtwo">adjective</label>
-      <input type="text" name="adjtwo" id="adjtwo" required>
+      <label for="choose">choose what best describes you!</label>
+
+      <select name="choose" id="choose">
+        <option value="pick">pick</option>
+        <option value="active">active</option>
+        <option value="lazy">lazy</option>
+        <option value="anxious">anxious</option>
+      </select>
     </fieldset>
 
     <fieldset>
@@ -60,25 +68,19 @@
       <input type="text" name="yourname" id="yourname" required>
     </fieldset>
 
-    <fieldset>
-      <label for="select">pick an option that describes you!</label>
-
-      <select name="select" id="select">
-        <option value="select">select</option>
-        <option value="active">active</option>
-        <option value="chill">chill</option>
-        <option value="anxious">anxious</option>
-      </select>
-    </fieldset>
 
     <fieldset>
-     <div>
-       <input type="reset" name="reset" value="start over" id="reset">
-       <input type="submit" name="submit" value="meet your new best friend!" id="submit">
-     </div>
+      <div>
+        <input type="reset" name="reset" value="start over" id="reset">
+        <input type="submit" name="submit" value="meet your new best friend!" id="submit">
+      </div>
     </fieldset>
 
   </form>
+
+  <section id="msgSection" class="hide">
+    <p id="myMsg"></p>
+  </section>
 
   <footer>
     <nav>
@@ -88,9 +90,7 @@
       </ul>
     </nav>
   </footer>
-
   <script src="script.js"></script>
-
 </body>
 
 </html>

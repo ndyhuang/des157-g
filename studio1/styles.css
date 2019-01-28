@@ -83,6 +83,35 @@ textarea {
   color: #ffb330;
 }
 
+/* message */
+.hide {
+  opacity:0;
+}
+
+.show {
+  opacity:1;
+  position: absolute;
+  width: 33%;
+  top: 55%;
+  left: 9%;
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+  color: #000000;
+
+  font-size: 15pt;
+}
+
+.show span {
+  font-size: 18pt;
+}
+
+.show p {
+  padding: 0 15px;
+}
+
+/* footer */
+
 footer {
   margin-top: 70px;
   position: fixed;
