@@ -11,7 +11,7 @@ body {
 header {
   width: 30%;
   position: absolute;
-  left: 17%;
+  left: 17.5%;
   top: 5%;
   display: flex;
 }
@@ -27,7 +27,7 @@ header img {
 
 #avatar {
   position: absolute;
-  left: 23.5%;
+  left: 24%;
   top: 20%;
 }
 
@@ -95,7 +95,7 @@ textarea {
   opacity:1;
   position: absolute;
   width: 28%;
-  top: 55%;
+  top: 58%;
   left: 18%;
   padding: 5px;
   background: #ffffff;
