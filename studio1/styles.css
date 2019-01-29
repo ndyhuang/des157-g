@@ -92,8 +92,9 @@ textarea {
   opacity: 1;
   position: absolute;
   width: 28%;
-  top: 58%;
+  top: 55%;
   left: 18%;
+  margin: 10px;
   padding: 5px;
   background: #ffffff;
   border-radius: 5px;
