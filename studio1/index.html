@@ -12,74 +12,74 @@
 </head>
 
 <body>
-  <header>
-    <img src="images/paw.svg" alt="paw print" width="80" height="72">
-    <h1>Make a Dog!</h1>
-  </header>
+  <section id=content>
+    <header>
+      <h1>Make a Dog!</h1>
+      <section id=image>
+        <img id="avatar" src="images/vague.svg" alt="dog avatar" width="250" height="250">
+      </section>
 
-  <section id=image>
-    <img id="avatar" src="images/vague.svg" alt="dog avatar" width="250" height="250">
-  </section>
+      <section id="msgSection" class="hide">
+        <p id="myMsg"></p>
+      </section>
+    </header>
 
-  <form>
-    <fieldset>
-      <label for="name">a name</label>
-      <input type="text" name="name" id="name" required>
-    </fieldset>
+    <form>
+      <fieldset>
+        <label for="name">a name</label>
+        <input type="text" name="name" id="name" required>
+      </fieldset>
 
-    <fieldset>
-      <label for="adjone">adjective</label>
-      <input type="text" name="adjone" id="adjone" required>
-    </fieldset>
+      <fieldset>
+        <label for="adjone">adjective</label>
+        <input type="text" name="adjone" id="adjone" required>
+      </fieldset>
 
-    <fieldset>
-      <label for="numb">number</label>
-      <input type="text" name="numb" id="numb" required>
-    </fieldset>
+      <fieldset>
+        <label for="numb">number</label>
+        <input type="text" name="numb" id="numb" required>
+      </fieldset>
 
-    <fieldset>
-      <label for="verb">verb</label>
-      <input type="text" name="verb" id="verb" required>
-    </fieldset>
+      <fieldset>
+        <label for="verb">verb</label>
+        <input type="text" name="verb" id="verb" required>
+      </fieldset>
 
-    <fieldset>
-      <label for="noun">noun</label>
-      <input type="text" name="noun" id="noun" required>
-    </fieldset>
+      <fieldset>
+        <label for="noun">noun</label>
+        <input type="text" name="noun" id="noun" required>
+      </fieldset>
 
-    <fieldset>
-      <label for="food">food</label>
-      <input type="text" name="food" id="food" required>
-    </fieldset>
+      <fieldset>
+        <label for="food">food</label>
+        <input type="text" name="food" id="food" required>
+      </fieldset>
 
-    <fieldset>
-      <label for="choose">choose what best describes you!</label>
+      <fieldset id="cho">
+        <label for="choose">choose what best describes you!</label>
 
-      <select name="choose" id="choose">
-        <option value="pick">pick</option>
-        <option value="active">active</option>
-        <option value="lazy">lazy</option>
-        <option value="anxious">anxious</option>
-      </select>
-    </fieldset>
+        <select name="choose" id="choose">
+          <option value="pick">pick</option>
+          <option value="active">active</option>
+          <option value="lazy">lazy</option>
+          <option value="anxious">anxious</option>
+        </select>
+      </fieldset>
 
-    <fieldset>
-      <label for="yourname">your name</label>
-      <input type="text" name="yourname" id="yourname" required>
-    </fieldset>
+      <fieldset>
+        <label for="yourname">your name</label>
+        <input type="text" name="yourname" id="yourname" required>
+      </fieldset>
 
 
-    <fieldset>
-      <div>
-        <input type="reset" name="reset" value="start over" id="reset">
-        <input type="submit" name="submit" value="meet your new best friend!" id="submit">
-      </div>
-    </fieldset>
+      <fieldset>
+        <div>
+          <input type="reset" name="reset" value="start over" id="reset">
+          <input type="submit" name="submit" value="meet your new best friend!" id="submit">
+        </div>
+      </fieldset>
 
-  </form>
-
-  <section id="msgSection" class="hide">
-    <p id="myMsg"></p>
+    </form>
   </section>
 
   <footer>
