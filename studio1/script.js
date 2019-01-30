@@ -1,6 +1,6 @@
 'use strict';
 
-document.querySelector('#submit').addEventListener('click', processForm);
+document.querySelector('form').addEventListener('submit', processForm);
 document.querySelector('#reset').addEventListener('click', resetForm);
 
 function processForm(evt) {
@@ -34,6 +34,7 @@ function processForm(evt) {
   msgSection.className = "show";
 
   evt.preventDefault();
+  return false;
 }
 
 function resetForm() {
