@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width:100%;
+  margin: auto;
+  background: #E1F0C4;
+  font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 8% 0 4%;
+  font-size: 3em;
+  font-weight: 900;
+  color: #009FB7;
+}
+
+section {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 5% 0 0;
+  color: #C4FFF9;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+img {
+  text-align: center;
+  margin: 0;
+}
+
+#balm, #bottle, #phone {
+  width: 100%;
+  height: 30%;
+  padding: 5%;
+}
+
+#balm {
+  background-color: #F4D35E;
+}
+
+#bottle {
+  background-color: #28AFB0;
+}
+
+#phone {
+  background-color: #D72638;
+}
+
+/* footer */
+
+footer {
+  width: 34%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  margin: 2%;
+  width: 40%;
+}
+
+footer nav ul li a {
+  padding: 5%;
+  text-decoration: none;
+  font-size: .8em;
+
+  color: #D72638;
+}
+
+a:hover {
+  color: #D74E09;
+}
+
+@media only screen and (min-width: 769px) {
+
+  section {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  #balm, #bottle, #phone {
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    margin: 5%;
+
+    width: 70%;
+    height: 95%;
+    border-radius: 50%;
+  }
+
+  footer {
+    width: 20%;
+  }
+
+  footer nav ul li a {
+    color: #3587A4;
+  }
+}

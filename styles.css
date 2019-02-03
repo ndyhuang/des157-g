@@ -109,6 +109,11 @@ article .source {
   font-size: 10pt;
 }
 
+article a {
+  text-decoration: none;
+  color: #f45f42;
+}
+
 article .source a, aside a {
   text-decoration: none;
   color: #f45f42;
