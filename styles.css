@@ -52,13 +52,16 @@ ul, ol {
 
 section h2 {
   text-align: left;
-  margin: 5px 0 10px;
+  margin: 5px 0 5px;
 }
 
 section nav ul, section nav ol {
   display: flex;
-  flex: 1;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+section nav ul li {
+  padding-top: 8px;
 }
 
 nav ul li a, nav ol li a {
