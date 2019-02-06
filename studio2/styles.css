@@ -5,20 +5,23 @@
 body {
   width:100%;
   margin: auto;
-  background: #E1F0C4;
+  background: #dee4ed;
   font-family: 'Nunito', sans-serif;
 }
 
 h1 {
   text-align: center;
-  margin: 8% 0 4%;
-  font-size: 3em;
+  width: 100%;
+  padding: 5%;
+  margin-bottom: 1%;
+  font-size: 3.8em;
   font-weight: 900;
   color: #009FB7;
 }
 
 section {
   width: 100%;
+  height: 95%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -38,21 +41,56 @@ img {
 }
 
 #balm, #bottle, #phone {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 30%;
+  height: 20%;
   padding: 5%;
+
+  justify-content: center;
 }
 
 #balm {
-  background-color: #F4D35E;
-}
-
-#bottle {
-  background-color: #28AFB0;
+  background-color: #78CAD2;
 }
 
 #phone {
-  background-color: #D72638;
+  background-color: #59C3C3;
+}
+
+#bottle {
+  background-color: #62A8AC;
+}
+
+#balmhov, #phonehov, #bottlehov {
+  display: none;
+  position: absolute;
+  width:100%;
+  height:70%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #9BCFE1;
+  padding: 5%;
+}
+
+p {
+  width: 100%;
+  padding: 3%;
+  font-size: 1.8em;
+  color: #f4f8ff;
+}
+
+#balmhov img, #phonehov img, #bottlehov img {
+  margin-top: 3%;
+  width: 100%;
+}
+
+#balmclose, #phoneclose, #bottleclose {
+  color: #C4FFF9;
+  position: absolute;
+  top: 3%;
+  right: 3%;
 }
 
 /* footer */
@@ -81,14 +119,21 @@ footer nav ul li a {
   text-decoration: none;
   font-size: .8em;
 
-  color: #D72638;
+  color: #62A8AC;
 }
 
 a:hover {
-  color: #D74E09;
+  color: #78CAD2;
 }
 
 @media only screen and (min-width: 769px) {
+  h1 {
+    text-align: center;
+    width: 100%;
+    padding: 6%;
+    margin-bottom: 1%;
+    font-size: 4em;
+  }
 
   section {
     width: 80%;
@@ -101,12 +146,63 @@ a:hover {
   #balm, #bottle, #phone {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    height: 110%;
     padding: 6%;
     margin: 5%;
 
-    width: 70%;
-    height: 95%;
     border-radius: 50%;
+    cursor: pointer;
+  }
+
+  #bmpic, #pnpic, #btpic{
+    opacity: .7;
+    transition: opacity 1s;
+  }
+
+  #balmhov, #phonehov, #bottlehov {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    width: 50%;
+    height:70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #9BCFE1;
+    padding: 5%;
+
+    border-radius: 5%;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #balmhov {
+    background-color: #78CAD2;
+  }
+
+  #phonehov {
+    background-color: #59C3C3;
+  }
+
+  #bottlehov {
+    background-color: #62A8AC;
+  }
+
+  #balmclose, #phoneclose, #bottleclose {
+    font-weight: 900;
+    color: #C4FFF9;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  p {
+    width: 100%;
+    padding: 3%;
+    font-size: 1.3em;
+    color: #f4f8ff;
   }
 
   footer {
