@@ -60,8 +60,13 @@ section nav ul, section nav ol {
   flex-direction: column;
 }
 
-section nav ul li {
+section nav ul li, section nav ol li  {
   padding-top: 8px;
+  border-left: 2px solid #a5a5a5;
+}
+
+section nav ul li:nth-child(1), section nav ol li:nth-child(1) {
+  padding-top: 0;
 }
 
 nav ul li a, nav ol li a {
@@ -72,7 +77,6 @@ nav ul li a, nav ol li a {
   font-size: 14pt;
   font-weight: 300;
   color: #f45f42;
-  border-left: 2px solid #a5a5a5;
 }
 
 a:hover, article .source a:hover, aside a:hover {
