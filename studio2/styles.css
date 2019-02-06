@@ -12,7 +12,6 @@ body {
 h1 {
   text-align: center;
   width: 100%;
-  padding: 2%;
   font-size: 3em;
   font-weight: 900;
   color: #009FB7;
@@ -42,7 +41,7 @@ img {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 3%;
+  padding: 2.2%;
 
   justify-content: center;
 }
@@ -93,9 +92,9 @@ p {
 /* footer */
 
 footer {
-  width: 34%;
+  width: 100%;
   position: fixed;
-  right: 0;
+  left:0;
   bottom: 0;
 }
 
@@ -107,14 +106,14 @@ footer nav ul {
 }
 
 footer nav ul li {
-  margin: 2%;
-  width: 40%;
+  margin: 1% 1%;
+  width: 15%;
 }
 
 footer nav ul li a {
-  padding: 5%;
+  padding: 2%;
   text-decoration: none;
-  font-size: .8em;
+  font-size: 1em;
 
   color: #62A8AC;
 }
@@ -127,8 +126,7 @@ a:hover {
   h1 {
     text-align: center;
     width: 100%;
-    padding: 6%;
-    margin-bottom: 1%;
+    padding: 6% 6% 2%;
     font-size: 4em;
   }
 
@@ -208,10 +206,16 @@ a:hover {
   }
 
   footer {
-    width: 20%;
+    width: 100%;
+  }
+
+  footer nav ul li {
+    margin: 3% 0.5% 1%;
+    width: 8%;
   }
 
   footer nav ul li a {
+    padding: 1%;
     color: #3587A4;
   }
 }
