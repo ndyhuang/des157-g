@@ -144,12 +144,17 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: 110%;
+    height: 100%;
     padding: 6%;
     margin: 5%;
 
     border-radius: 50%;
     cursor: pointer;
+  }
+
+  #balm img, #bottle img, #phone img {
+    width: 140px;
+    height: 220px;
   }
 
   #bmpic, #pnpic, #btpic{
