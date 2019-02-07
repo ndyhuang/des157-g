@@ -1,5 +1,7 @@
 'use strict';
 
+var desktop = document.querySelector('#desktop');
+
 var balm = document.querySelector('#balm');
 var phone = document.querySelector('#phone');
 var bottle = document.querySelector('#bottle');
@@ -8,9 +10,9 @@ var balmhov = document.querySelector('#balmhov');
 var phonehov = document.querySelector('#phonehov');
 var bottlehov = document.querySelector('#bottlehov');
 
-var balmclose = document.querySelector('#balmclose');
-var phoneclose = document.querySelector('#phoneclose');
-var phoneclose = document.querySelector('#phoneclose');
+var bmclose = document.querySelector('#bmclose');
+var pnclose = document.querySelector('#pnclose');
+var btclose = document.querySelector('#btclose');
 
 var bmpic = document.querySelector('#bmpic');
 var pnpic = document.querySelector('#pnpic');
@@ -20,91 +22,65 @@ var bmpic2 = document.querySelector('#bmpic2');
 var pnpic2 = document.querySelector('#pnpic2');
 var btpic2 = document.querySelector('#btpic2');
 
-//overlay behavior
-
-balm.addEventListener('click',function(){
-  balmhov.style.display='flex';
-  balm.style.display='none';
-  phone.style.display='none';
-  bottle.style.display='none';
-})
-
-phone.addEventListener('click',function(){
-  phonehov.style.display='flex';
-  balm.style.display='none';
-  phone.style.display='none';
-  bottle.style.display='none';
-})
-
-bottle.addEventListener('click',function(){
-  bottlehov.style.display='flex';
-  balm.style.display='none';
-  phone.style.display='none';
-  bottle.style.display='none';
-})
-
-//close behavior
-
-balmclose.addEventListener('click',function(){
-  balmhov.style.display='none';
-  phonehov.style.display='none';
-  bottlehov.style.display='none';
-
-  balm.style.display='flex';
-  phone.style.display='flex';
-  bottle.style.display='flex';
-})
-
-phoneclose.addEventListener('click',function(){
-  balmhov.style.display='none';
-  phonehov.style.display='none';
-  bottlehov.style.display='none';
-
-  balm.style.display='flex';
-  phone.style.display='flex';
-  bottle.style.display='flex';
-})
-
-bottleclose.addEventListener('click',function(){
-  balmhov.style.display='none';
-  phonehov.style.display='none';
-  bottlehov.style.display='none';
-
-  balm.style.display='flex';
-  phone.style.display='flex';
-  bottle.style.display='flex';
-})
 
 //img hover for buttons
 
-bmpic.addEventListener('mouseover',function(){
-  bmpic.style.opacity='1';
+balm.addEventListener('mouseover',function(){
   bmpic.src='images/balms.svg';
 })
 
-bmpic.addEventListener('mouseout',function(){
-  bmpic.style.opacity='.7';
+balm.addEventListener('mouseout',function(){
   bmpic.src='images/balmo.svg';
 })
 
-pnpic.addEventListener('mouseover',function(){
-  pnpic.style.opacity='1';
+phone.addEventListener('mouseover',function(){
   pnpic.src='images/phones.svg';
 })
 
-pnpic.addEventListener('mouseout',function(){
-  pnpic.style.opacity='.7';
+phone.addEventListener('mouseout',function(){
   pnpic.src='images/phoneo.svg';
 })
 
-btpic.addEventListener('mouseover',function(){
-  btpic.style.opacity='1';
+bottle.addEventListener('mouseover',function(){
   btpic.src='images/bottles.svg';
 })
 
-btpic.addEventListener('mouseout',function(){
-  btpic.style.opacity='.7';
+bottle.addEventListener('mouseout',function(){
   btpic.src='images/bottleo.svg';
+})
+
+//overlay behavior
+
+balm.addEventListener('click',function(){
+  balmhov.style.left='50%';
+  desktop.style.marginLeft='100%';
+})
+
+phone.addEventListener('click',function(){
+  phonehov.style.left='50%';
+  desktop.style.marginLeft='100%';
+})
+
+bottle.addEventListener('click',function(){
+  bottlehov.style.left='50%';
+  desktop.style.marginLeft='100%';
+})
+
+//desktop close behavior
+
+bmclose.addEventListener('click',function(){
+  balmhov.style.left='-50%';
+  desktop.style.marginLeft='0';
+})
+
+pnclose.addEventListener('click',function(){
+  phonehov.style.left='-50%';
+  desktop.style.marginLeft='0';
+})
+
+btclose.addEventListener('click',function(){
+  bottlehov.style.left='-50%';
+  desktop.style.marginLeft='0';
 })
 
 //img hover for overlays
