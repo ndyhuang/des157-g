@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 768px;
+  margin: auto;
+  background: url(images/sky.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% auto;
+}
+
+#header {
+  width: 58%;
+  margin: 8% auto 0;
+  padding: 1%;
+  transition: all 2s;
+}
+
+h1 {
+  text-align: center;
+  color: #FBECBE;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.3em;
+  font-weight: 500;
+  letter-spacing: .3em;
+  background: #062039;
+}
+
+p {
+  width: 80%;
+  margin: auto;
+  padding: 1%;
+  color: #C4775C;
+  font-family: 'Fira', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.3em;
+  letter-spacing: .1em;
+  background: #062039;
+}
+
+#prompt {
+  text-align: center;
+  font-weight: 600;
+  color: #FBECBE;
+}
+
+#humm {
+  width: 315px;
+  height: 255px;
+  margin: 4% auto 3%;
+  opacity: .7;
+  background: url('images/hummhover.png');
+  background-repeat: no-repeat;
+  transition: opacity 1s;
+}
+
+#humm:hover {
+  opacity: 1;
+  background: url('images/hummingbird.png');
+  width: 310px;
+  height: 255px;
+  animation: play .8s steps(10) infinite;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@keyframes play {
+  100% {
+    background-position: -3150px;
+  }
+}
+
+/*hummingbird story*/
+#humming {
+  display: none;
+  opacity: 0;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 5%:
+  padding: 0;
+  transition: opacity 2s;
+}
+
+#humming h2 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: .3em;
+  color: #FBECBE;
+}
+
+#humming p {
+  padding: 1% 0;
+  font-size: 1em;
+}
+
+#humming p:last-child {
+  margin-bottom: 5%;
+}
+
+#cw {
+  text-align: center;
+}
+
+#home {
+  margin: 4% auto;
+  width: 10%;
+  text-align: center;
+  background: #C4775C;
+  color: #062039;
+}
+
+#home:hover {
+  background: #D9CFAB;
+  color: #062039;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+footer nav ul {
+  list-style-type: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin: 1% 1% 1% 3%;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  font-family: 'Fira', sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: #FBECBE;
+}
+
+a:hover {
+  color: #C4775C;
+}
