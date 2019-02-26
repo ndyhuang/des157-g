@@ -7,10 +7,18 @@ body {
   height: 100%;
   margin: auto;
   background: url(images/sky.svg);
-  background-repeat: repeat-y;
+  background-repeat: repeat-x;
   background-attachment: fixed;
-  background-size:100% auto;
+  background-size: 100% auto;
+  animation: slide 240s linear infinite;
 }
+
+@keyframes slide {
+  100% {
+    background-position: -2732px;
+  }
+}
+
 
 #header {
   width: 58%;
