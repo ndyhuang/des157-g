@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(images/sky.svg);
+  background-attachment: fixed;
+  background-size: 100% auto;
+  animation: slide 240s linear infinite;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/*
+@keyframes slide {
+  100% {
+    background-position: -2732px;
+  }
+} */
+/* navigation */
+
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  background: #062039;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  padding: 3%;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+header nav ul li p {
+  font-size: 1em;
+  text-decoration: none;
+  color: #FBECBE;
+}
+
+header nav ul li p:hover {
+  cursor: pointer;
+  color: #FBECBE;
+  border-bottom: 3px solid #C4775C;
+}
+
+/* homescreen */
+
+#intro {
+  width: 70%;
+  height: 100%;
+  margin: 7% auto;
+  padding: 5%;
+  transition: all 3s;
+}
+
+#intro h1 {
+  text-align: center;
+  font-family: 'Gochi Hand', cursive;
+  letter-spacing: .3em;
+  color: #FBECBE;
+  background: #062039;
+}
+
+#intro p {
+  color: #C4775C;
+  font-weight: 300;
+  background: #062039;
+}
+
+#birds {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 22%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#bird1, #bird2, #bird3 {
+  margin: 3%;
+  width: 20%;
+  min-height: 30%;
+  padding: 5%;
+  background: #b2b2b2;
+  text-align: center;
+}
+
+#bird1:hover, #bird2:hover, #bird3:hover {
+  cursor: pointer;
+}
+
+#bird1 {
+  width: 315px;
+  height: 255px;
+  background: url(images/hummhover.png)
+}
+
+/* stories */
+
+#story1, #story2, #story3, #aboutpg {
+  display: none;
+  margin: auto;
+  padding: 5%;
+  width: 70%;
+  height: 100vh;
+  color: #FBECBE;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+#story1 h2, #story2 h2, #story3 h2, #about h2 {
+  font-size: 2.5em;
+  font-family: 'Gochi Hand', cursive;
+  color: #C4775C;
+  text-align: center;
+}
+
+.cw {
+  font-size: 1.1em;
+  text-align: center;
+  background: #062039;
+}
+
+.scroll {
+  color: #C4775C;
+  font-size: 1.1em;
+  text-align: center;
+  margin-bottom: 30%;
+}
+
+#story1 p, #story2 p, #story3 p, #about p {
+  font-weight: 300;
+  color: #FBECBE;
+}
+
+#story1pic {
+  margin: auto;
+  width: 315px;
+  height: 255px;
+  background: url(images/hummhover.png)
+}
+
+.storyone {
+  width: 600px;
+  margin: 50px auto 300px;
+  padding: 10px;
+  background: #062039;
+  color: #FBECBE;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#sharepg {
+  display: none;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  background: #062039;
+}
+
+footer nav ul {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer nav ul li {
+  margin: 0 6%;
+  list-style-type: none;
+  font-size: 1em;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #FBECBE;
+}
