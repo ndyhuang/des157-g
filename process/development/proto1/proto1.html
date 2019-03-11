@@ -6,136 +6,151 @@
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="dist/aos.css" />
+    <script src="scrollmagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <section id="intro">
-      <h1>under the same sky</h1>
-      <p>Each bird below represents the stories of struggle, joy, and gratitude of various <strong>immigrant women</strong>. Their stories often go unheard, but through the voices provided by this platform, they hope to reach your ears and offer you a moment of learning of their past, present, and futures.</p>
+    <section id="sketch">
+      <section id="intro">
+        <h1>under the same sky</h1>
+        <p>Each bird below represents the stories of struggle, joy, and gratitude of various <strong>immigrant women</strong>. Their stories often go unheard, but through the voices provided by this platform, they hope to reach your ears and offer you a moment of learning of their past, present, and futures.</p>
 
-      <section id="birds">
-        <div id="bird1">
+        <p id="strt"><strong>Click on one of the birds below to start your journey.</strong></p>
 
-        </div>
+        <section id="birds">
+          <div id="bird1"></div>
 
-        <div id="bird2">
+          <div id="bird2"></div>
 
-        </div>
-
-        <div id="bird3">
-
-        </div>
+          <div id="bird3"></div>
+        </section>
       </section>
-    </section>
 
-    <section id="story1">
-      <div id="story1pic">
+      <header>
+        <nav>
+          <ul>
+            <li> <p id="hm">home</p> </li>
+            <li> <p id="abt">about</p> </li>
+            <li> <p id="shr">share</p> </li>
+          </ul>
+        </nav>
+      </header>
 
-      </div>
-      <div class="start">
-        <h2>the hummingbird</h2>
-        <p class="cw">content warnings: deportation</p>
-        <p class="cw">Honduras to U.S.A.</p>
-      </div>
-      <div class="scroll"><p>scroll down</p></div>
-      <div class="storyone" data-aos="fade-right">The hummingbird's story starts in the island of Sulawesi. This was the place the hummingbird called home and where she grew up. Although the hummingbird's family was poor, they still had plenty of joy and happiness to share with each other. </div>
-      <div class="storyone" data-aos="fade-left">However, despite how hard her family worked to make ends meet, it became increasingly difficult to provide basic needs to everyone, especially after the death of her father. </div>
-      <div class="storyone" data-aos="fade-right">The hummingbird had heard stories from other young women in her community about how others were immigrating to America with work visas and found well-paying jobs that weren't available for women in Sulawesi. The hummingbird understood that sacrifices were to be made and she decided to immigrate to America in order to find work and help support her family. Upon coming to America, the hummingbird soon found that the streets were not paved in gold, nor was there any prosperity for anyone like her, but still, she was optimistic.</div>
-      <div class="storyone" data-aos="fade-left">She found work through a friend, first as a maid and later as a home care assistant for the disabled. The work was difficult and long, but she made more money than she ever could if she had stayed at home. The hummingbird planned to stay in America for several more years in order to get her family to a more stable place, but this plan all changed when she became pregnant.</div>
-      <div class="storyone" data-aos="fade-right">The hummingbird was scared and unsure of her future. She wanted to go back home to her family, but she knew that if she went back, her child wouldn't have access to education or safety like in America. America had never been kind to her; this country and its people treated her like she was disposable, took advantage of her labor, and subjected her to all kinds of sexism, xenophobia, and racism. However, the hummingbird knew that although America did not treat her well, perhaps it would be different for her children. After much pain and deliberation, she decided to stay. </div>
-      <div class="storyone" data-aos="fade-left">She overstayed her work visa and out of fear that she would be deported if she tried to renew it, she became <strong>undocumented</strong>. To this day, the hummingbird still longs to see her family back in Sulawesi again, but feels trapped in a country that adamantly calls for the deportation of women like her. Despite the struggles she endured, the hummingbird never regretted putting her children before her, and she is now the proud mother of two soon-to-be college graduates.</div>
-    </section>
-
-    <section id="story2">
-      <div class="start">
-        <h2>the eagle-hawk</h2>
-        <p class="cw">content warnings: deportation</p>
-        <p class="cw">Indonesia to U.S.A.</p>
-      </div>
-      <p>The hummingbird's story starts in the island of Sulawesi. This was the place the hummingbird called home and where she grew up. Although the hummingbird's family was poor, they still had plenty of joy and happiness to share with each other.
-        However, despite how hard her family worked to make ends meet, it became increasingly difficult to provide basic needs to everyone, especially after the death of her father. </p>
-      <p>The hummingbird had heard stories from other young women in her community about how others were immigrating to America with work visas and found well-paying jobs that weren't available for women in Sulawesi. The hummingbird understood that
-        sacrifices were to be made and she decided to immigrate to America in order to find work and help support her family. Upon coming to America, the hummingbird soon found that the streets were not paved in gold, nor was there any prosperity for
-        anyone like her, but still, she was optimistic.</p>
-      <p>She found work through a friend, first as a maid and later as a home care assistant for the disabled. The work was difficult and long, but she made more money than she ever could if she had stayed at home. The hummingbird planned to stay in
-        America for several more years in order to get her family to a more stable place, but this plan all changed when she became pregnant.</p>
-      <p>The hummingbird was scared and unsure of her future. She wanted to go back home to her family, but she knew that if she went back, her child wouldn't have access to education or safety like in America. America had never been kind to her; this
-        country and its people treated her like she was disposable, took advantage of her labor, and subjected her to all kinds of sexism, xenophobia, and racism. However, the hummingbird knew that although America did not treat her well, perhaps it
-        would be different for her children. After much pain and deliberation, she decided to stay.</p>
-      <p>She overstayed her work visa and out of fear that she would be deported if she tried to renew it, she became undocumented. To this day, the hummingbird still longs to see her family back in Sulawesi again, but feels trapped in a country that
-        adamantly calls for the deportation of women like her. Despite the struggles she endured, the hummingbird never regretted putting her children before her, and she is now the proud mother of two soon-to-be college graduates.</p>
-    </section>
-
-    <section id="story3">
-      <div class="start">
-        <h2>the swallow</h2>
-        <p class="cw">content warnings: deportation</p>
-        <p class="cw">Honduras to U.S.A.</p>
-      </div>
-      <p>The hummingbird's story starts in the island of Sulawesi. This was the place the hummingbird called home and where she grew up. Although the hummingbird's family was poor, they still had plenty of joy and happiness to share with each other.
-        However, despite how hard her family worked to make ends meet, it became increasingly difficult to provide basic needs to everyone, especially after the death of her father. </p>
-      <p>The hummingbird had heard stories from other young women in her community about how others were immigrating to America with work visas and found well-paying jobs that weren't available for women in Sulawesi. The hummingbird understood that
-        sacrifices were to be made and she decided to immigrate to America in order to find work and help support her family. Upon coming to America, the hummingbird soon found that the streets were not paved in gold, nor was there any prosperity for
-        anyone like her, but still, she was optimistic.</p>
-      <p>She found work through a friend, first as a maid and later as a home care assistant for the disabled. The work was difficult and long, but she made more money than she ever could if she had stayed at home. The hummingbird planned to stay in
-        America for several more years in order to get her family to a more stable place, but this plan all changed when she became pregnant.</p>
-      <p>The hummingbird was scared and unsure of her future. She wanted to go back home to her family, but she knew that if she went back, her child wouldn't have access to education or safety like in America. America had never been kind to her; this
-        country and its people treated her like she was disposable, took advantage of her labor, and subjected her to all kinds of sexism, xenophobia, and racism. However, the hummingbird knew that although America did not treat her well, perhaps it
-        would be different for her children. After much pain and deliberation, she decided to stay.</p>
-      <p>She overstayed her work visa and out of fear that she would be deported if she tried to renew it, she became undocumented. To this day, the hummingbird still longs to see her family back in Sulawesi again, but feels trapped in a country that adamantly calls for the deportation of women like her. Despite the struggles she endured, the hummingbird never regretted putting her children before her, and she is now the proud mother of two soon-to-be college graduates.</p>
-    </section>
-
-    <section id="aboutpg">
-      <h2>about under the sky</h2>
-      <p>this project is a creative platform for audiences to learn more about the struggles of immigrant women using motifs of the sky and birds. This project hopes to give immigrant women a voice to share their experiences and to help those outside of their communities to become more educated about issues that these women face.</p>
-      <p>If you want to learn more about how to better support these women, visit the <a href="https://www.icwclaw.org/">Immigration Center for Women and Children</a> to learn more.</p>
-      <p>If you or a loved one would like to submit a story of your own to be displayed on this platform, submit your story through our <a href="#share">form here</a>.</p>
-    </section>
-
-    <section id="sharepg">
-      <h2>share your story</h2>
-      <p>We encourage immigrant women and/or their loved ones to submit their stories and feel validated in their truths. Fill out the form below to submit your story for our team to review. Additional interviews</p>
-      <form>
-        <fieldset>
-          <label for="name">name</label>
-          <input type="text" name="name" id="name" required>
-        </fieldset>
-
-        <fieldset>
-          <label for="contact">contact</label>
-          <input type="text" name="contact" id="contact" required>
-        </fieldset>
-        <p>Write your story</p>
-        <textarea rows="10" cols="100">
-
-        </textarea>
-    </section>
-
-    <!-- <div id="up">
-      <p><a href="#intro">go back up</a></p>
-    </div> -->
-
-    <header>
-      <nav>
+      <div id="optn">
         <ul>
-          <li> <p id="hm">home</p> </li>
-          <li> <p id="strs">stories</p> </li>
-          <li> <p id="abt">about</p> </li>
-          <li> <p id="shr">share your story</p> </li>
+          <li> <img src="images/humming.svg" alt="vector of hummingbird" width="120" id="icon"> </li>
+          <li> <img src="images/hawk.svg" alt="vector of hawk eagle" width="120" id="icon2"> </li>
+          <li> <img src="images/swallow.svg" alt="vector of swallow" width="120" id="icon3"> </li>
         </ul>
-      </nav>
-    </header>
+      </div>
 
-    <footer>
-      <nav>
+      <div id="optn2">
         <ul>
-          <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
-          <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+          <li> <a href="#one" id="secone">one</a> </li>
+          <li> <a href="#two" id="sectwo">two</a> </li>
+          <li> <a href="#three" id="secthree">three</a> </li>
+          <li> <a href="#four" id="secfour">four</a> </li>
+          <li> <a href="#five" id="secfive">five</a> </li>
+          <li> <a href="#six" id="secsix">six</a> </li>
         </ul>
-      </nav>
-    </footer>
-    <script src="dist/aos.js"></script>
+      </div>
+
+      <section id="story1">
+        <div id="story1pic">
+
+        </div>
+        <div class="start">
+          <h2>the hummingbird</h2>
+          <p>content warnings: deportation</p>
+          <p>Honduras to U.S.A.</p>
+          <p class="cw">scroll down</p>
+          <img src="images/arrow.gif" alt="down arrow" width="40">
+        </div>
+        <div id="one" class="transit" data-aos="fade-right">The hummingbird's story starts in the island of Sulawesi. This was the place the hummingbird called home and where she grew up. Although the hummingbird's family was poor, they still had plenty of joy and happiness to share with each other. </div>
+        <div id="two" class="transit" data-aos="fade-left">However, despite how hard her family worked to make ends meet, it became increasingly difficult to provide basic needs to everyone, especially after the death of her father. </div>
+        <div id="three" class="transit" data-aos="fade-right">The hummingbird had heard stories from other young women in her community about how others were immigrating to America with work visas and found well-paying jobs that weren't available for women in Sulawesi. The hummingbird understood that sacrifices were to be made and she decided to immigrate to America in order to find work and help support her family. Upon coming to America, the hummingbird soon found that the streets were not paved in gold, nor was there any prosperity for anyone like her, but still, she was optimistic.</div>
+        <div id="four" class="transit" data-aos="fade-left">She found work through a friend, first as a maid and later as a home care assistant for the disabled. The work was difficult and long, but she made more money than she ever could if she had stayed at home. The hummingbird planned to stay in America for several more years in order to get her family to a more stable place, but this plan all changed when she became pregnant.</div>
+        <div id="five" class="transit" data-aos="fade-right">The hummingbird was scared and unsure of her future. She wanted to go back home to her family, but she knew that if she went back, her child wouldn't have access to education or safety like in America. America had never been kind to her; this country and its people treated her like she was disposable, took advantage of her labor, and subjected her to all kinds of sexism, xenophobia, and racism. However, the hummingbird knew that although America did not treat her well, perhaps it would be different for her children. After much pain and deliberation, she decided to stay. </div>
+        <div id="six" class="transit" data-aos="fade-left">She overstayed her work visa and out of fear that she would be deported if she tried to renew it, she became <strong>undocumented</strong>. To this day, the hummingbird still longs to see her family back in Sulawesi again, but feels trapped in a country that adamantly calls for the deportation of women like her. Despite the struggles she endured, the hummingbird never regretted putting her children before her, and she is now the proud mother of two soon-to-be college graduates.</div>
+      </section>
+
+      <section id="story2">
+        <div id="story2pic">
+
+        </div>
+        <div class="start">
+          <h2>the eagle-hawk</h2>
+          <p class="cw">content warnings: deportation</p>
+          <p class="cw">Indonesia to U.S.A.</p>
+          <p class="cw">scroll down</p>
+          <img src="images/arrow.gif" alt="down arrow" width="40">
+        </div>
+        <div id="one" class="transit" data-aos="fade-right">The hummingbird's story starts in the island of Sulawesi. This was the place the hummingbird called home and where she grew up. Although the hummingbird's family was poor, they still had plenty of joy and happiness to share with each other. </div>
+        <div id="two" class="transit" data-aos="fade-left">However, despite how hard her family worked to make ends meet, it became increasingly difficult to provide basic needs to everyone, especially after the death of her father. </div>
+        <div id="three" class="transit" data-aos="fade-right">The hummingbird had heard stories from other young women in her community about how others were immigrating to America with work visas and found well-paying jobs that weren't available for women in Sulawesi. The hummingbird understood that sacrifices were to be made and she decided to immigrate to America in order to find work and help support her family. Upon coming to America, the hummingbird soon found that the streets were not paved in gold, nor was there any prosperity for anyone like her, but still, she was optimistic.</div>
+        <div class="transit" data-aos="fade-left">She found work through a friend, first as a maid and later as a home care assistant for the disabled. The work was difficult and long, but she made more money than she ever could if she had stayed at home. The hummingbird planned to stay in America for several more years in order to get her family to a more stable place, but this plan all changed when she became pregnant.</div>
+        <div class="transit" data-aos="fade-right">The hummingbird was scared and unsure of her future. She wanted to go back home to her family, but she knew that if she went back, her child wouldn't have access to education or safety like in America. America had never been kind to her; this country and its people treated her like she was disposable, took advantage of her labor, and subjected her to all kinds of sexism, xenophobia, and racism. However, the hummingbird knew that although America did not treat her well, perhaps it would be different for her children. After much pain and deliberation, she decided to stay. </div>
+        <div class="transit" data-aos="fade-left">She overstayed her work visa and out of fear that she would be deported if she tried to renew it, she became <strong>undocumented</strong>. To this day, the hummingbird still longs to see her family back in Sulawesi again, but feels trapped in a country that adamantly calls for the deportation of women like her. Despite the struggles she endured, the hummingbird never regretted putting her children before her, and she is now the proud mother of two soon-to-be college graduates.</div>
+      </section>
+
+      <section id="story3">
+        <div id="story3pic">
+
+        </div>
+        <div class="start">
+          <h2>the swallow</h2>
+          <p class="cw">content warnings: deportation</p>
+          <p class="cw">Honduras to U.S.A.</p>
+          <p class="cw">scroll down</p>
+          <img src="images/arrow.gif" alt="down arrow" width="40">
+        </div>
+        <div class="transit" data-aos="fade-right">The hummingbird's story starts in the island of Sulawesi. This was the place the hummingbird called home and where she grew up. Although the hummingbird's family was poor, they still had plenty of joy and happiness to share with each other. </div>
+        <div class="transit" data-aos="fade-left">However, despite how hard her family worked to make ends meet, it became increasingly difficult to provide basic needs to everyone, especially after the death of her father. </div>
+        <div class="transit" data-aos="fade-right">The hummingbird had heard stories from other young women in her community about how others were immigrating to America with work visas and found well-paying jobs that weren't available for women in Sulawesi. The hummingbird understood that sacrifices were to be made and she decided to immigrate to America in order to find work and help support her family. Upon coming to America, the hummingbird soon found that the streets were not paved in gold, nor was there any prosperity for anyone like her, but still, she was optimistic.</div>
+        <div class="transit" data-aos="fade-left">She found work through a friend, first as a maid and later as a home care assistant for the disabled. The work was difficult and long, but she made more money than she ever could if she had stayed at home. The hummingbird planned to stay in America for several more years in order to get her family to a more stable place, but this plan all changed when she became pregnant.</div>
+        <div class="transit" data-aos="fade-right">The hummingbird was scared and unsure of her future. She wanted to go back home to her family, but she knew that if she went back, her child wouldn't have access to education or safety like in America. America had never been kind to her; this country and its people treated her like she was disposable, took advantage of her labor, and subjected her to all kinds of sexism, xenophobia, and racism. However, the hummingbird knew that although America did not treat her well, perhaps it would be different for her children. After much pain and deliberation, she decided to stay. </div>
+        <div class="transit" data-aos="fade-left">She overstayed her work visa and out of fear that she would be deported if she tried to renew it, she became <strong>undocumented</strong>. To this day, the hummingbird still longs to see her family back in Sulawesi again, but feels trapped in a country that adamantly calls for the deportation of women like her. Despite the struggles she endured, the hummingbird never regretted putting her children before her, and she is now the proud mother of two soon-to-be college graduates.</div>
+      </section>
+
+      <section id="aboutpg">
+        <h2>about under the sky</h2>
+        <p>this project is a creative platform for audiences to learn more about the struggles of immigrant women using motifs of the sky and birds. This project hopes to give immigrant women a voice to share their experiences and to help those outside of their communities to become more educated about issues that these women face.</p>
+        <p>If you want to learn more about how to better support these women, visit the <a href="https://www.icwclaw.org/">Immigration Center for Women and Children</a> to learn more.</p>
+        <p>If you or a loved one would like to submit a story of your own to be displayed on this platform, submit your story through our <a href="#share">form here</a>.</p>
+      </section>
+
+      <section id="sharepg">
+        <h2>share your story</h2>
+        <p>We encourage immigrant women and/or their loved ones to submit their stories and feel validated in their truths. Fill out the form below to submit your story for our team to review. Additional interviews</p>
+        <form>
+          <fieldset>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="contact">contact</label>
+            <input type="text" name="contact" id="contact" required>
+          </fieldset>
+          <p>Write your story</p>
+          <textarea rows="10" cols="100">
+
+          </textarea>
+      </section>
+
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

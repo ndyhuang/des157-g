@@ -5,77 +5,82 @@
 body {
   width: 100%;
   height: 100%;
-  margin: auto;
-  background: url(images/sky.svg);
-  background-attachment: fixed;
-  background-size: 100% auto;
-  animation: slide 240s linear infinite;
+  background: #062039;
   font-family: 'Fira Sans', sans-serif;
 }
 
-/*
-@keyframes slide {
-  100% {
-    background-position: -2732px;
-  }
-} */
-/* navigation */
+#sketch {
+  height: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* main nav */
 
 header nav {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 25%;
+  left: 0;
+  width: 18%;
   background: #062039;
 }
 
 header nav ul {
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  margin: 2%;
+  padding-left: 0;
 }
 
 header nav ul li {
-  padding: 3%;
-  list-style-type: none;
-  text-decoration: none;
+  margin-right: 10%;
+  padding: 0;
 }
 
 header nav ul li p {
-  font-size: 1em;
-  text-decoration: none;
+  font-size: 1.1em;
   color: #FBECBE;
+  opacity: .5;
+  transition: opacity 1s;
 }
 
 header nav ul li p:hover {
-  cursor: pointer;
+  opacity: 1;
   color: #FBECBE;
   border-bottom: 3px solid #C4775C;
+  cursor: pointer;
 }
 
 /* homescreen */
 
 #intro {
-  width: 70%;
-  height: 100%;
-  margin: 7% auto;
-  padding: 5%;
-  transition: all 3s;
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 100vh;
+  margin: 10% auto;
 }
 
 #intro h1 {
-  text-align: center;
+  background: #062039;
   font-family: 'Gochi Hand', cursive;
+  text-align: center;
   letter-spacing: .3em;
   color: #FBECBE;
-  background: #062039;
+}
+
+#strt {
+  text-align: center;
 }
 
 #intro p {
+  background: #062039;
   color: #C4775C;
   font-weight: 300;
-  background: #062039;
 }
 
 #birds {
@@ -89,34 +94,132 @@ header nav ul li p:hover {
 
 #bird1, #bird2, #bird3 {
   margin: 3%;
-  width: 20%;
-  min-height: 30%;
   padding: 5%;
+  width: 300px;
+  height: 300px;
   background: #b2b2b2;
-  text-align: center;
+  transform: scale(1);
+  opacity: .5;
+  transition: all 1s;
 }
 
 #bird1:hover, #bird2:hover, #bird3:hover {
   cursor: pointer;
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 #bird1 {
-  width: 315px;
-  height: 255px;
-  background: url(images/hummhover.png)
+  background: url(images/humminghov.svg);
+  background-repeat: no-repeat;
+}
+
+#bird2 {
+  background: url(images/hawkhov.svg);
+  background-repeat: no-repeat;
+}
+
+#bird3 {
+  background: url(images/swallowhov.svg);
+  background-repeat: no-repeat;
+}
+
+#bird1:hover {
+  background:url(images/humming.svg);
+  background-repeat: no-repeat;
+}
+
+#bird2:hover {
+  background:url(images/hawk.svg);
+  background-repeat: no-repeat;
+}
+
+#bird3:hover {
+  background:url(images/swallow.svg);
+  background-repeat: no-repeat;
+}
+
+/* anchored nav */
+
+#optn {
+  position: fixed;
+  left: -15%;
+  top: 22%;
+  opacity: 0;
+  transition: left 2s, opacity 2s;
+  margin-left: 2%;
+}
+
+#optn2 {
+  position: fixed;
+  right: -15%;
+  top: 30%;
+  opacity: 0;
+  transition: right 2s, opacity 2s;
+}
+
+#icon, #icon2, #icon3 {
+  opacity: .4;
+}
+
+#optn ul, #optn2 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+}
+
+#optn ul li, #optn2 ul li {
+  list-style-type: none;
+  background: #062039;
+}
+
+#optn ul li {
+  margin-bottom: 0;
+}
+
+#optn2 ul li {
+  margin-bottom: 7%;
+}
+
+#optn2 ul li a {
+  color: #C4775C;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+#optn2 ul li a:hover {
+  color: #FBECBE;
+}
+
+#optn img {
+  transition: transform 1s, opacity 1s;
+}
+
+#optn img:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.active {
+  background: #FBECBE;
 }
 
 /* stories */
 
-#story1, #story2, #story3, #aboutpg {
-  display: none;
+#story1, #story2, #story3 {
+  display: block;
+  position: absolute;
+  left: -200%;
   margin: auto;
   padding: 5%;
   width: 70%;
-  height: 100vh;
-  color: #FBECBE;
   opacity: 0;
-  transition: opacity 5s;
+  color: #FBECBE;
+  transition: opacity 3s;
 }
 
 #story1 h2, #story2 h2, #story3 h2, #about h2 {
@@ -126,17 +229,20 @@ header nav ul li p:hover {
   text-align: center;
 }
 
-.cw {
+.start {
+  width: 50%;
+  margin: 0 auto 40%;
+}
+
+.start p {
   font-size: 1.1em;
   text-align: center;
   background: #062039;
 }
 
-.scroll {
-  color: #C4775C;
-  font-size: 1.1em;
-  text-align: center;
-  margin-bottom: 30%;
+.start img {
+  display: block;
+  margin: auto;
 }
 
 #story1 p, #story2 p, #story3 p, #about p {
@@ -146,22 +252,36 @@ header nav ul li p:hover {
 
 #story1pic {
   margin: auto;
-  width: 315px;
-  height: 255px;
-  background: url(images/hummhover.png)
+  width: 300px;
+  height: 300px;
+  background: url(images/humming.svg)
 }
 
-.storyone {
-  width: 600px;
-  margin: 50px auto 300px;
-  padding: 10px;
+#story2pic {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background: url(images/hawk.svg)
+}
+
+#story3pic {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background: url(images/swallow.svg)
+}
+
+.transit {
+  width: 60%;
+  margin: 20% auto 50%;
+  padding: 1%;
   background: #062039;
   color: #FBECBE;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-#sharepg {
+#sharepg, #aboutpg {
   display: none;
   width: 50%;
   height: 100vh;
