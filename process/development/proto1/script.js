@@ -29,27 +29,27 @@ var story3 = document.querySelector('#story3');
 
 var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 500}});
 
-new ScrollMagic.Scene({triggerElement:'#one'})
+new ScrollMagic.Scene({triggerElement:'.one'})
 .setClassToggle('#secone','active')
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement:'#two'})
+new ScrollMagic.Scene({triggerElement:'.two'})
 .setClassToggle('#sectwo','active')
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement:'#three'})
+new ScrollMagic.Scene({triggerElement:'.three'})
 .setClassToggle('#secthree','active')
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement:'#four'})
+new ScrollMagic.Scene({triggerElement:'.four'})
 .setClassToggle('#secfour','active')
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement:'#five'})
+new ScrollMagic.Scene({triggerElement:'.five'})
 .setClassToggle('#secfive','active')
 .addTo(controller);
 
-new ScrollMagic.Scene({triggerElement:'#six'})
+new ScrollMagic.Scene({triggerElement:'.six'})
 .setClassToggle('#secsix','active')
 .addTo(controller);
 

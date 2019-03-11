@@ -271,7 +271,7 @@ header nav ul li p:hover {
   background: url(images/swallow.svg)
 }
 
-.transit {
+.one, .two, .three, .four, .five, .six{
   width: 60%;
   margin: 20% auto 50%;
   padding: 1%;
