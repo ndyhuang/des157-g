@@ -9,8 +9,8 @@ var intro = document.querySelector('#intro');
 var sketch = document.querySelector('#sketch');
 
 var hm = document.querySelector('#hm');
-var abt = document.querySelector('#abt');
-var shr = document.querySelector('#shr');
+var abt = document.querySelector('#aboutpg');
+var shr = document.querySelector('#sharepg');
 
 var down = document.querySelectorAll('.down');
 var one = document.querySelectorAll('.one');
@@ -24,6 +24,13 @@ var secthree = document.querySelector('#secthree');
 var secfour = document.querySelector('#secfour');
 var secfive = document.querySelector('#secfive');
 var secsix = document.querySelector('#secsix');
+
+var linkone = document.querySelector('#linkone');
+var linktwo = document.querySelector('#linktwo');
+var linkthree = document.querySelector('#linkthree');
+var linkfour = document.querySelector('#linkfour');
+var linkfive = document.querySelector('#linkfive');
+var linksix = document.querySelector('#linksix');
 
 var icon = document.querySelector('#icon');
 var icon2 = document.querySelector('#icon2');
@@ -87,6 +94,13 @@ new ScrollMagic.Scene({
 console.log(sketch.offsetHeight);
 
 bird1.addEventListener('click', function() {
+  linkone.href = '#one-1';
+  linktwo.href = '#two-1';
+  linkthree.href = '#three-1';
+  linkfour.href = '#four-1';
+  linkfive.href = '#five-1';
+  linksix.href = '#six-1';
+
   story1.style.left = '15%';
   story1.style.opacity = '1';
 
@@ -103,6 +117,13 @@ bird1.addEventListener('click', function() {
 })
 
 bird2.addEventListener('click', function() {
+  linkone.href = '#one-2';
+  linktwo.href = '#two-2';
+  linkthree.href = '#three-2';
+  linkfour.href = '#four-2';
+  linkfive.href = '#five-2';
+  linksix.href = '#six-2';
+
   story2.style.left = '15%';
   story2.style.opacity = '1';
 
@@ -119,6 +140,13 @@ bird2.addEventListener('click', function() {
 })
 
 bird3.addEventListener('click', function() {
+  linkone.href = '#one-3';
+  linktwo.href = '#two-3';
+  linkthree.href = '#three-3';
+  linkfour.href = '#four-3';
+  linkfive.href = '#five-3';
+  linksix.href = '#six-3';
+
   story3.style.left = '15%';
   story3.style.opacity = '1';
 
@@ -153,6 +181,13 @@ hm.addEventListener('click', function() {
 })
 
 icon.addEventListener('click', function() {
+  linkone.href = '#one-1';
+  linktwo.href = '#two-1';
+  linkthree.href = '#three-1';
+  linkfour.href = '#four-1';
+  linkfive.href = '#five-1';
+  linksix.href = '#six-1';
+
   story1.style.left = '15%';
   story1.style.opacity = '1';
   window.scrollTo(0, 0);
@@ -172,6 +207,13 @@ icon.addEventListener('click', function() {
 })
 
 icon2.addEventListener('click', function() {
+  linkone.href = '#one-2';
+  linktwo.href = '#two-2';
+  linkthree.href = '#three-2';
+  linkfour.href = '#four-2';
+  linkfive.href = '#five-2';
+  linksix.href = '#six-2';
+
   story2.style.left = '15%';
   story2.style.opacity = '1';
   window.scrollTo(0, 0);
@@ -191,6 +233,13 @@ icon2.addEventListener('click', function() {
 })
 
 icon3.addEventListener('click', function() {
+  linkone.href = '#one-3';
+  linktwo.href = '#two-3';
+  linkthree.href = '#three-3';
+  linkfour.href = '#four-3';
+  linkfive.href = '#five-3';
+  linksix.href = '#six-3';
+
   story3.style.left = '15%';
   story3.style.opacity = '1';
   window.scrollTo(0, 0);
@@ -208,6 +257,46 @@ icon3.addEventListener('click', function() {
   story1.style.left = '-100%';
   story2.style.left = '-100%';
 })
+
+// abt.addEventListener('click',function(){
+//   abt.style.left = '20%';
+//   window.scrollTo(0, 0);
+//
+//   story1.style.left = '-200%';
+//   story2.style.left = '-200%';
+//   story3.style.left = '-200%';
+//   intro.style.left = '-200%';
+//   shr.style.left = '-200%';
+//
+//   story1.style.opacity = '0';
+//   story2.style.opacity = '0';
+//   story3.style.opacity = '0';
+//
+//   optn.style.left = '-15%';
+//   optn.style.opacity = '0';
+//   optn2.style.right = '-15%';
+//   optn2.style.opacity = '0';
+// })
+
+// shr.addEventListener('click',function(){
+  // shr.style.left = '20%';
+  // window.scrollTo(0, 0);
+  //
+  // story1.style.left = '-200%';
+  // story2.style.left = '-200%';
+  // story3.style.left = '-200%';
+  // intro.style.left = '-200%';
+  // abt.style.left = '-200%';
+  //
+  // story1.style.opacity = '0';
+  // story2.style.opacity = '0';
+  // story3.style.opacity = '0';
+  //
+  // optn.style.left = '-15%';
+  // optn.style.opacity = '0';
+  // optn2.style.right = '-15%';
+  // optn2.style.opacity = '0';
+// })
 
 optn.addEventListener('mouseover', function() {
   optn.style.opacity = '1';
@@ -273,25 +362,3 @@ function Star(x, y, r, s) {
     }
   };
 }
-
-// abt.addEventListener('click',function(){
-//   story1.style.display='none';
-//   story2.style.display='none';
-//   story3.style.display='none';
-//   intro.style.display='none';
-//   sharepg.style.display='none';
-//
-//   aboutpg.style.display='block';
-//   abt.style.borderBottom='3px solid #C4775C';
-// })
-//
-// shr.addEventListener('click',function(){
-//   story1.style.display='none';
-//   story2.style.display='none';
-//   story3.style.display='none';
-//   intro.style.display='none';
-//   aboutpg.style.display='none';
-//
-//   sharepg.style.display='block';
-//   shr.style.borderBottom='3px solid #C4775C';
-// })

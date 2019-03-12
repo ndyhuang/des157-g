@@ -141,7 +141,7 @@ header nav ul li p:hover {
   background-repeat: no-repeat;
 }
 
-/* anchored nav */
+/* anchored nav menus */
 #optn {
   position: fixed;
   left: -15%;
@@ -238,10 +238,6 @@ header nav ul li p:hover {
 .start img {
   display: block;
   margin: auto;
-}
-
-.down {
-  cursor: pointer;
 }
 
 #story1 p, #story2 p, #story3 p, #about p {
