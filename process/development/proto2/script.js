@@ -6,7 +6,7 @@ AOS.init({
 });
 
 var intro = document.querySelector('#intro');
-// var sketch = document.querySelector('#sketch');
+var sketch = document.querySelector('#sketch');
 
 var hm = document.querySelector('#hm');
 var abt = document.querySelector('#abt');
@@ -17,6 +17,13 @@ var one = document.querySelectorAll('.one');
 
 var optn = document.querySelector('#optn');
 var optn2 = document.querySelector('#optn2');
+
+var secone = document.querySelector('#secone');
+var sectwo = document.querySelector('#sectwo');
+var secthree = document.querySelector('#secthree');
+var secfour = document.querySelector('#secfour');
+var secfive = document.querySelector('#secfive');
+var secsix = document.querySelector('#secsix');
 
 var icon = document.querySelector('#icon');
 var icon2 = document.querySelector('#icon2');
@@ -38,6 +45,8 @@ var controller = new ScrollMagic.Controller({
     duration: 500
   }
 });
+
+var timeout = setTimeout(function() {optn.style.opacity = '0.4'; optn2.style.opacity='0.4'}, 5000);
 
 new ScrollMagic.Scene({
     triggerElement: '.one'
@@ -75,71 +84,67 @@ new ScrollMagic.Scene({
   .setClassToggle('#secsix', 'active')
   .addTo(controller);
 
-// window.addEventListener('resize', function() {
-//   var wheight = sketch.offsetHeight;
-//   console.log(wheight);
-// })
-var timeout = setTimeout(function() {optn.style.opacity = '0.4'; optn2.style.opacity='0.4'}, 5000);
+console.log(sketch.offsetHeight);
 
 bird1.addEventListener('click', function() {
-  story1.style.left = "15%";
-  story1.style.opacity = "1";
+  story1.style.left = '15%';
+  story1.style.opacity = '1';
 
   icon.src = 'images/humming.svg';
   icon2.src = 'images/hawkhov.svg';
   icon3.src = 'images/swallowhov.svg';
 
-  optn.style.left = "0";
-  optn.style.opacity = "1";
-  optn2.style.right = "3%";
-  optn2.style.opacity = "1";
+  optn.style.left = '0';
+  optn.style.opacity = '1';
+  optn2.style.right = '3%';
+  optn2.style.opacity = '1';
 
-  intro.style.left = "-100%";
+  intro.style.left = '-100%';
 })
 
 bird2.addEventListener('click', function() {
-  story2.style.left = "15%";
-  story2.style.opacity = "1";
+  story2.style.left = '15%';
+  story2.style.opacity = '1';
 
   icon.src = 'images/humminghov.svg';
   icon2.src = 'images/hawk.svg';
   icon3.src = 'images/swallowhov.svg';
 
-  optn.style.left = "0";
-  optn.style.opacity = "1";
-  optn2.style.right = "3%";
-  optn2.style.opacity = "1";
+  optn.style.left = '0';
+  optn.style.opacity = '1';
+  optn2.style.right = '3%';
+  optn2.style.opacity = '1';
 
-  intro.style.left = "-100%";
+  intro.style.left = '-100%';
 })
 
 bird3.addEventListener('click', function() {
-  story3.style.left = "15%";
-  story3.style.opacity = "1";
+  story3.style.left = '15%';
+  story3.style.opacity = '1';
 
   icon.src = 'images/humminghov.svg';
   icon2.src = 'images/hawkhov.svg';
   icon3.src = 'images/swallow.svg';
 
-  optn.style.left = "0";
-  optn.style.opacity = "1";
-  optn2.style.right = "3%";
-  optn2.style.opacity = "1";
+  optn.style.left = '0';
+  optn.style.opacity = '1';
+  optn2.style.right = '3%';
+  optn2.style.opacity = '1';
 
-  intro.style.left = "-100%";
+  intro.style.left = '-100%';
 })
 
 hm.addEventListener('click', function() {
-  intro.style.left = "20%";
+  intro.style.left = '20%';
   window.scrollTo(0, 0);
 
-  story1.style.left = "-200%";
-  story2.style.left = "-200%";
-  story3.style.left = "-200%";
+  story1.style.left = '-200%';
+  story2.style.left = '-200%';
+  story3.style.left = '-200%';
 
-  story1.style.opacity = "0";
-  story2.style.opacity = "0";
-  story3.style.opacity = "0";
+  story1.style.opacity = '0';
+  story2.style.opacity = '0';
+  story3.style.opacity = '0';
 
   optn.style.left = '-15%';
   optn.style.opacity = '0';
@@ -156,10 +161,10 @@ icon.addEventListener('click', function() {
   icon2.src = 'images/hawkhov.svg';
   icon3.src = 'images/swallowhov.svg';
 
-  optn.style.left = "0";
-  optn.style.opacity = "1";
-  optn2.style.right = "3%";
-  optn2.style.opacity = "1";
+  optn.style.left = '0';
+  optn.style.opacity = '1';
+  optn2.style.right = '3%';
+  optn2.style.opacity = '1';
 
   intro.style.left = '-100%';
   story2.style.left = '-100%';
@@ -167,18 +172,18 @@ icon.addEventListener('click', function() {
 })
 
 icon2.addEventListener('click', function() {
-  story2.style.left = "15%";
-  story2.style.opacity = "1";
+  story2.style.left = '15%';
+  story2.style.opacity = '1';
   window.scrollTo(0, 0);
 
   icon.src = 'images/humminghov.svg';
   icon2.src = 'images/hawk.svg';
   icon3.src = 'images/swallowhov.svg';
 
-  optn.style.left = "0";
-  optn.style.opacity = "1";
-  optn2.style.right = "3%";
-  optn2.style.opacity = "1";
+  optn.style.left = '0';
+  optn.style.opacity = '1';
+  optn2.style.right = '3%';
+  optn2.style.opacity = '1';
 
   intro.style.left = "-100%";
   story1.style.left = "-100%";
@@ -186,18 +191,18 @@ icon2.addEventListener('click', function() {
 })
 
 icon3.addEventListener('click', function() {
-  story3.style.left = "15%";
-  story3.style.opacity = "1";
+  story3.style.left = '15%';
+  story3.style.opacity = '1';
   window.scrollTo(0, 0);
 
   icon.src = 'images/humminghov.svg';
   icon2.src = 'images/hawkhov.svg';
   icon3.src = 'images/swallow.svg';
 
-  optn.style.left = "0";
-  optn.style.opacity = "1";
-  optn2.style.right = "3%";
-  optn2.style.opacity = "1";
+  optn.style.left = '0';
+  optn.style.opacity = '1';
+  optn2.style.right = '3%';
+  optn2.style.opacity = '1';
 
   intro.style.left = '-100%';
   story1.style.left = '-100%';
@@ -215,7 +220,11 @@ optn2.addEventListener('mouseover', function() {
 })
 
 optn.addEventListener('mouseout', function() {
-  timeout = setTimeout(function() {optn.style.opacity = '0.4'; optn2.style.opacity='0.4'}, 5000);
+  timeout = setTimeout(function() {optn.style.opacity = '0.4';}, 5000);
+})
+
+optn2.addEventListener('mouseout', function() {
+  timeout = setTimeout(function() {optn2.style.opacity = '0.4';}, 5000);
 })
 
 var star = [];
