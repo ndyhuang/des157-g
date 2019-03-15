@@ -336,6 +336,8 @@ header nav ul li p:hover {
 }
 
 #aboutpg h2, #sharepg h2 {
+  padding: 0;
+  margin: 0;
   font-family: 'Gochi Hand', cursive;
   text-align: center;
   font-size: 5.5vh;
@@ -344,9 +346,11 @@ header nav ul li p:hover {
 }
 
 #aboutpg h3 {
+  padding: 0;
+  margin: 0;
   font-family: 'Gochi Hand', cursive;
   text-align: center;
-  font-size: 4.5vh;
+  font-size: 4vh;
   letter-spacing: 0.5vh;
   color: #FBECBE;
 }
@@ -368,7 +372,7 @@ header nav ul li p:hover {
 }
 
 #aboutpg p {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .form {
