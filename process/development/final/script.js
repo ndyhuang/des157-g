@@ -9,8 +9,15 @@ var intro = document.querySelector('#intro');
 var sketch = document.querySelector('#sketch');
 
 var hm = document.querySelector('#hm');
-var abt = document.querySelector('#aboutpg');
-var shr = document.querySelector('#sharepg');
+var abt = document.querySelector('#abt');
+var shr = document.querySelector('#shr');
+var shrclick = document.querySelector('#shrclick');
+var submit = document.querySelector('#submit');
+var received = document.querySelector('#received');
+var close = document.querySelector('#close');
+
+var about = document.querySelector('#aboutpg');
+var share = document.querySelector('#sharepg');
 
 var fact1 = document.querySelector('#fact1');
 var fact2 = document.querySelector('#fact2');
@@ -19,6 +26,9 @@ var fact4 = document.querySelector('#fact4');
 var fact5 = document.querySelector('#fact5');
 var fact6 = document.querySelector('#fact6');
 var fact7 = document.querySelector('#fact7');
+var fact8 = document.querySelector('#fact8');
+var fact9 = document.querySelector('#fact9');
+var fact10 = document.querySelector('#fact10');
 
 var f1 = document.querySelector('#f1');
 var f2 = document.querySelector('#f2');
@@ -27,6 +37,9 @@ var f4 = document.querySelector('#f4');
 var f5 = document.querySelector('#f5');
 var f6 = document.querySelector('#f6');
 var f7 = document.querySelector('#f7');
+var f8 = document.querySelector('#f8');
+var f9 = document.querySelector('#f9');
+var f10 = document.querySelector('#f10');
 
 var optn = document.querySelector('#optn');
 var optn2 = document.querySelector('#optn2');
@@ -107,6 +120,8 @@ new ScrollMagic.Scene({
   .setClassToggle('#secsix', 'active')
   .addTo(controller);
 
+console.log(sketch.offsetHeight);
+
 bird1.addEventListener('click', function() {
   linkone.href = '#one-1';
   linktwo.href = '#two-1';
@@ -177,21 +192,101 @@ bird3.addEventListener('click', function() {
 })
 
 hm.addEventListener('click', function() {
-  intro.style.left = '20%';
+  intro.style.left = '17.5%';
+  hm.style.borderBottom = '3px solid #C4775C';
+  shr.style.borderBottom = 'none';
+  abt.style.borderBottom = 'none';
   window.scrollTo(0, 0);
 
   story1.style.left = '-200%';
   story2.style.left = '-200%';
   story3.style.left = '-200%';
+  about.style.left = '-200%';
+  share.style.left = '-200%';
 
   story1.style.opacity = '0';
   story2.style.opacity = '0';
   story3.style.opacity = '0';
+  share.style.opacity = '0';
+  about.style.opacity = '0';
 
   optn.style.left = '-15%';
   optn.style.opacity = '0';
   optn2.style.right = '-15%';
   optn2.style.opacity = '0';
+})
+
+shrclick.addEventListener('click', function() {
+  share.style.left = '22.5%';
+  share.style.opacity = '1';
+  shr.style.borderBottom = '3px solid #C4775C';
+  abt.style.borderBottom = 'none';
+  hm.style.borderBottom = 'none';
+  window.scrollTo(0, 0);
+
+  about.style.left = '-200%';
+})
+
+abt.addEventListener('click',function(){
+  about.style.left = '22.5%';
+  about.style.opacity = '1';
+  abt.style.borderBottom = '3px solid #C4775C';
+  shr.style.borderBottom = 'none';
+  hm.style.borderBottom = 'none';
+  window.scrollTo(0, 0);
+
+  intro.style.left = '-200vh';
+  story1.style.left = '-200vh';
+  story2.style.left = '-200vh';
+  story3.style.left = '-200vh';
+  intro.style.left = '-200vh';
+  share.style.left = '-200vh';
+
+  story1.style.opacity = '0';
+  story2.style.opacity = '0';
+  story3.style.opacity = '0';
+  share.style.opacity = '0';
+
+  optn.style.left = '-25vh';
+  optn.style.opacity = '0';
+  optn2.style.right = '-25vh';
+  optn2.style.opacity = '0';
+})
+
+shr.addEventListener('click',function(){
+  share.style.left = '22.5%';
+  share.style.opacity = '1';
+  shr.style.borderBottom = '3px solid #C4775C';
+  abt.style.borderBottom = 'none';
+  hm.style.borderBottom = 'none';
+  window.scrollTo(0, 0);
+
+  intro.style.left = '-200vh';
+  story1.style.left = '-200vh';
+  story2.style.left = '-200vh';
+  story3.style.left = '-200vh';
+  intro.style.left = '-200vh';
+  about.style.left = '-200vh';
+
+  story1.style.opacity = '0';
+  story2.style.opacity = '0';
+  story3.style.opacity = '0';
+  about.style.opacity = '0';
+
+  optn.style.left = '-25vh';
+  optn.style.opacity = '0';
+  optn2.style.right = '-25vh';
+  optn2.style.opacity = '0';
+})
+
+submit.addEventListener('click', function() {
+  received.style.left = '25%';
+  received.style.opacity = '1';
+})
+
+close.addEventListener('click', function() {
+  received.style.left = '-100%';
+  received.style.opacity = '0';
 })
 
 icon.addEventListener('click', function() {
@@ -271,7 +366,7 @@ icon3.addEventListener('click', function() {
   story1.style.left = '-100%';
   story2.style.left = '-100%';
 })
-//
+
 // fact1.addEventListener('mouseout', hide(fone))
 // fact1.addEventListener('mouseover', show(fone))
 //
@@ -354,45 +449,36 @@ fact7.addEventListener('mouseout', function() {
   f7.style.right = '-60vh';
   f7.style.opacity = '0';
 })
-// abt.addEventListener('click',function(){
-//   abt.style.left = '20%';
-//   window.scrollTo(0, 0);
-//
-//   story1.style.left = '-200%';
-//   story2.style.left = '-200%';
-//   story3.style.left = '-200%';
-//   intro.style.left = '-200%';
-//   shr.style.left = '-200%';
-//
-//   story1.style.opacity = '0';
-//   story2.style.opacity = '0';
-//   story3.style.opacity = '0';
-//
-//   optn.style.left = '-15%';
-//   optn.style.opacity = '0';
-//   optn2.style.right = '-15%';
-//   optn2.style.opacity = '0';
-// })
 
-// shr.addEventListener('click',function(){
-// shr.style.left = '20%';
-// window.scrollTo(0, 0);
-//
-// story1.style.left = '-200%';
-// story2.style.left = '-200%';
-// story3.style.left = '-200%';
-// intro.style.left = '-200%';
-// abt.style.left = '-200%';
-//
-// story1.style.opacity = '0';
-// story2.style.opacity = '0';
-// story3.style.opacity = '0';
-//
-// optn.style.left = '-15%';
-// optn.style.opacity = '0';
-// optn2.style.right = '-15%';
-// optn2.style.opacity = '0';
-// })
+fact8.addEventListener('mouseover', function() {
+  f8.style.right = '-40vh';
+  f8.style.opacity = '1';
+})
+
+fact8.addEventListener('mouseout', function() {
+  f8.style.right = '-60vh';
+  f8.style.opacity = '0';
+})
+
+fact9.addEventListener('mouseover', function() {
+  f9.style.right = '-40vh';
+  f9.style.opacity = '1';
+})
+
+fact9.addEventListener('mouseout', function() {
+  f9.style.right = '-60vh';
+  f9.style.opacity = '0';
+})
+
+fact10.addEventListener('mouseover', function() {
+  f10.style.right = '-40vh';
+  f10.style.opacity = '1';
+})
+
+fact10.addEventListener('mouseout', function() {
+  f10.style.right = '-60vh';
+  f10.style.opacity = '0';
+})
 
 optn.addEventListener('mouseover', function() {
   optn.style.opacity = '1';
@@ -407,7 +493,7 @@ optn2.addEventListener('mouseover', function() {
 optn.addEventListener('mouseout', function() {
   timeout = setTimeout(function() {
     optn.style.opacity = '0.4';
-  }, 5000);
+  }, 5000)
 })
 
 optn2.addEventListener('mouseout', function() {
