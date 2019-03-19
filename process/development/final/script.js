@@ -48,6 +48,14 @@ var f7 = document.querySelector('#f7');
 var f8 = document.querySelector('#f8');
 var f9 = document.querySelector('#f9');
 var f10 = document.querySelector('#f10');
+var f11 = document.querySelector('#f11');
+var f12 = document.querySelector('#f12');
+var f13 = document.querySelector('#f13');
+var f14 = document.querySelector('#f14');
+var f15 = document.querySelector('#f15');
+var f16 = document.querySelector('#f16');
+var f17 = document.querySelector('#f17');
+var f18 = document.querySelector('#f18');
 
 var optn = document.querySelector('#optn');
 var optn2 = document.querySelector('#optn2');
@@ -59,6 +67,7 @@ var secfour = document.querySelector('#secfour');
 var secfive = document.querySelector('#secfive');
 var secsix = document.querySelector('#secsix');
 
+var linkzero = document.querySelector('#linkzero');
 var linkone = document.querySelector('#linkone');
 var linktwo = document.querySelector('#linktwo');
 var linkthree = document.querySelector('#linkthree');
@@ -87,45 +96,159 @@ var controller = new ScrollMagic.Controller({
   }
 });
 
-new ScrollMagic.Scene({
-    triggerElement: '.one'
+var scene0 = new ScrollMagic.Scene({
+    triggerElement: '.storypic'
+  })
+  .setClassToggle('#seczero', 'active')
+  .addTo(controller);
+
+var scene1 = new ScrollMagic.Scene({
+    triggerElement: '#one1'
   })
   .setClassToggle('#secone', 'active')
+  .enabled(false)
   .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: '.two'
+var scene2 = new ScrollMagic.Scene({
+    triggerElement: '#two1'
   })
   .setClassToggle('#sectwo', 'active')
+  .enabled(false)
   .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: '.three'
+var scene3 = new ScrollMagic.Scene({
+    triggerElement: '#three1'
   })
   .setClassToggle('#secthree', 'active')
+  .enabled(false)
   .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: '.four'
+var scene4 = new ScrollMagic.Scene({
+    triggerElement: '#four1'
   })
   .setClassToggle('#secfour', 'active')
+  .enabled(false)
   .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: '.five'
+var scene5 = new ScrollMagic.Scene({
+    triggerElement: '#five1'
   })
   .setClassToggle('#secfive', 'active')
+  .enabled(false)
   .addTo(controller);
 
-new ScrollMagic.Scene({
-    triggerElement: '.six'
+var scene6 = new ScrollMagic.Scene({
+    triggerElement: '#six1'
   })
   .setClassToggle('#secsix', 'active')
+  .enabled(false)
   .addTo(controller);
 
-console.log(sketch.offsetHeight);
+var scene7 = new ScrollMagic.Scene({
+    triggerElement: '#one2'
+  })
+  .setClassToggle('#secone', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene8 = new ScrollMagic.Scene({
+    triggerElement: '#two2'
+  })
+  .setClassToggle('#sectwo', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene9 = new ScrollMagic.Scene({
+    triggerElement: '#three2'
+  })
+  .setClassToggle('#secthree', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene10 = new ScrollMagic.Scene({
+    triggerElement: '#four2'
+  })
+  .setClassToggle('#secfour', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene11 = new ScrollMagic.Scene({
+    triggerElement: '#five2'
+  })
+  .setClassToggle('#secfive', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene12 = new ScrollMagic.Scene({
+    triggerElement: '#six2'
+  })
+  .setClassToggle('#secsix', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene13 = new ScrollMagic.Scene({
+    triggerElement: '#one3'
+  })
+  .setClassToggle('#secone', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene14 = new ScrollMagic.Scene({
+    triggerElement: '#two3'
+  })
+  .setClassToggle('#sectwo', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene15 = new ScrollMagic.Scene({
+    triggerElement: '#three3'
+  })
+  .setClassToggle('#secthree', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene16 = new ScrollMagic.Scene({
+    triggerElement: '#four3'
+  })
+  .setClassToggle('#secfour', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene17 = new ScrollMagic.Scene({
+    triggerElement: '#five3'
+  })
+  .setClassToggle('#secfive', 'active')
+  .enabled(false)
+  .addTo(controller);
+
+var scene18 = new ScrollMagic.Scene({
+    triggerElement: '#six3'
+  })
+  .setClassToggle('#secsix', 'active')
+  .enabled(false)
+  .addTo(controller);
 
 bird1.addEventListener('click', function() {
+  scene1.enabled(true);
+  scene2.enabled(true);
+  scene3.enabled(true);
+  scene4.enabled(true);
+  scene5.enabled(true);
+  scene6.enabled(true);
+  scene7.enabled(false);
+  scene8.enabled(false);
+  scene9.enabled(false);
+  scene10.enabled(false);
+  scene11.enabled(false);
+  scene12.enabled(false);
+  scene13.enabled(false);
+  scene14.enabled(false);
+  scene15.enabled(false);
+  scene16.enabled(false);
+  scene17.enabled(false);
+  scene18.enabled(false);
+
+  linkzero.href = '#story1pic';
   linkone.href = '#one-1';
   linktwo.href = '#two-1';
   linkthree.href = '#three-1';
@@ -150,6 +273,26 @@ bird1.addEventListener('click', function() {
 })
 
 bird2.addEventListener('click', function() {
+  scene1.enabled(false);
+  scene2.enabled(false);
+  scene3.enabled(false);
+  scene4.enabled(false);
+  scene5.enabled(false);
+  scene6.enabled(false);
+  scene7.enabled(true);
+  scene8.enabled(true);
+  scene9.enabled(true);
+  scene10.enabled(true);
+  scene11.enabled(true);
+  scene12.enabled(true);
+  scene13.enabled(false);
+  scene14.enabled(false);
+  scene15.enabled(false);
+  scene16.enabled(false);
+  scene17.enabled(false);
+  scene18.enabled(false);
+
+  linkzero.href = '#story2pic';
   linkone.href = '#one-2';
   linktwo.href = '#two-2';
   linkthree.href = '#three-2';
@@ -174,6 +317,26 @@ bird2.addEventListener('click', function() {
 })
 
 bird3.addEventListener('click', function() {
+  scene1.enabled(false);
+  scene2.enabled(false);
+  scene3.enabled(false);
+  scene4.enabled(false);
+  scene5.enabled(false);
+  scene6.enabled(false);
+  scene7.enabled(false);
+  scene8.enabled(false);
+  scene9.enabled(false);
+  scene10.enabled(false);
+  scene11.enabled(false);
+  scene12.enabled(false);
+  scene13.enabled(true);
+  scene14.enabled(true);
+  scene15.enabled(true);
+  scene16.enabled(true);
+  scene17.enabled(true);
+  scene18.enabled(true);
+
+  linkzero.href = '#story3pic';
   linkone.href = '#one-3';
   linktwo.href = '#two-3';
   linkthree.href = '#three-3';
@@ -285,9 +448,12 @@ shr.addEventListener('click',function(){
   optn2.style.opacity = '0';
 })
 
-submit.addEventListener('click', function() {
+submit.addEventListener('click', function(evt) {
   received.style.left = '25%';
   received.style.opacity = '1';
+
+  evt.preventDefault();
+  return false;
 })
 
 close.addEventListener('click', function() {
@@ -296,6 +462,26 @@ close.addEventListener('click', function() {
 })
 
 icon.addEventListener('click', function() {
+  scene1.enabled(true);
+  scene2.enabled(true);
+  scene3.enabled(true);
+  scene4.enabled(true);
+  scene5.enabled(true);
+  scene6.enabled(true);
+  scene7.enabled(false);
+  scene8.enabled(false);
+  scene9.enabled(false);
+  scene10.enabled(false);
+  scene11.enabled(false);
+  scene12.enabled(false);
+  scene13.enabled(false);
+  scene14.enabled(false);
+  scene15.enabled(false);
+  scene16.enabled(false);
+  scene17.enabled(false);
+  scene18.enabled(false);
+
+  linkzero.href = '#story1pic';
   linkone.href = '#one-1';
   linktwo.href = '#two-1';
   linkthree.href = '#three-1';
@@ -323,6 +509,26 @@ icon.addEventListener('click', function() {
 })
 
 icon2.addEventListener('click', function() {
+  scene1.enabled(false);
+  scene2.enabled(false);
+  scene3.enabled(false);
+  scene4.enabled(false);
+  scene5.enabled(false);
+  scene6.enabled(false);
+  scene7.enabled(true);
+  scene8.enabled(true);
+  scene9.enabled(true);
+  scene10.enabled(true);
+  scene11.enabled(true);
+  scene12.enabled(true);
+  scene13.enabled(false);
+  scene14.enabled(false);
+  scene15.enabled(false);
+  scene16.enabled(false);
+  scene17.enabled(false);
+  scene18.enabled(false);
+
+  linkzero.href = '#story2pic';
   linkone.href = '#one-2';
   linktwo.href = '#two-2';
   linkthree.href = '#three-2';
@@ -350,6 +556,26 @@ icon2.addEventListener('click', function() {
 })
 
 icon3.addEventListener('click', function() {
+  scene1.enabled(false);
+  scene2.enabled(false);
+  scene3.enabled(false);
+  scene4.enabled(false);
+  scene5.enabled(false);
+  scene6.enabled(false);
+  scene7.enabled(false);
+  scene8.enabled(false);
+  scene9.enabled(false);
+  scene10.enabled(false);
+  scene11.enabled(false);
+  scene12.enabled(false);
+  scene13.enabled(true);
+  scene14.enabled(true);
+  scene15.enabled(true);
+  scene16.enabled(true);
+  scene17.enabled(true);
+  scene18.enabled(true);
+
+  linkzero.href = '#story3pic';
   linkone.href = '#one-3';
   linktwo.href = '#two-3';
   linkthree.href = '#three-3';
@@ -375,21 +601,6 @@ icon3.addEventListener('click', function() {
   story1.style.left = '-100%';
   story2.style.left = '-100%';
 })
-
-// fact1.addEventListener('mouseover', show('fone'))
-// fact1.addEventListener('mouseout', hide('fone'))
-//
-// function show(f) {
-//   var f;
-//   f.style.right = '-40vh';
-//   f.style.opacity = '1';
-// }
-//
-// function hide(f) {
-//   var f;
-//   f.style.right = '-60vh';
-//   f.style.opacity = '0';
-// }
 
 fact1.addEventListener('mouseover', function() {
   f1.style.right = '-40vh';
