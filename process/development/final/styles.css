@@ -300,7 +300,6 @@ header nav ul li p:hover {
   color: #F7D091;
   background-color: #973B30;
   border-radius: 2vh;
-
   transition: right 1s, opacity 1s;
 }
 

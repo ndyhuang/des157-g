@@ -396,7 +396,7 @@ shrclick.addEventListener('click', function() {
   about.style.left = '-200%';
 })
 
-abt.addEventListener('click',function(){
+abt.addEventListener('click', function() {
   about.style.left = '22.5%';
   about.style.opacity = '1';
   abt.style.borderBottom = '3px solid #C4775C';
@@ -422,7 +422,7 @@ abt.addEventListener('click',function(){
   optn2.style.opacity = '0';
 })
 
-shr.addEventListener('click',function(){
+shr.addEventListener('click', function() {
   share.style.left = '22.5%';
   share.style.opacity = '1';
   shr.style.borderBottom = '3px solid #C4775C';
