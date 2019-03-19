@@ -218,11 +218,9 @@ header nav ul li p:hover {
   display: block;
   position: absolute;
   left: -200%;
-  margin: auto;
   padding: 5%;
   width: 70%;
   opacity: 0;
-  color: #FBECBE;
   transition: opacity 3s;
 }
 
@@ -234,6 +232,7 @@ header nav ul li p:hover {
 }
 
 .start {
+  color: #FBECBE;
   width: 50%;
   margin: 0 auto;
 }
@@ -292,7 +291,7 @@ header nav ul li p:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -60vh;
+  right: -43vh;
   opacity: 0;
   width: 35vh;
   padding: 2vh;
@@ -302,7 +301,7 @@ header nav ul li p:hover {
   background-color: #973B30;
   border-radius: 2vh;
 
-  transition: right 2s, opacity 2s;
+  transition: right 1s, opacity 1s;
 }
 
 .fact p {
@@ -311,9 +310,9 @@ header nav ul li p:hover {
 }
 
 .facthov {
-  weight: 600;
+  font-weight: 400;
   color: #C4775C;
-  border-bottom: solid 1px #C4775C;
+  border-bottom: solid 2px #C4775C;
 }
 
 .facthov:hover {
@@ -375,13 +374,29 @@ header nav ul li p:hover {
   margin-bottom: 10%;
 }
 
+#aboutpg p:nth-of-type(3), #aboutpg p:nth-of-type(4) {
+  margin-bottom: 5%;
+}
+
+#aboutpg ul {
+  margin: auto;
+  padding-left: 0;
+  width: 90%;
+}
+
+#aboutpg ul li {
+  color: #ffcb77;
+  margin-bottom: 5vh;
+  background: #062039;
+}
+
+#aboutpg ul li a {
+  color: #C4775C;
+}
+
 .form {
   width: 65%;
   margin: auto;
-}
-
-#sharepg p {
-  margin-bottom: 7vh;
 }
 
 #sharepg input[type="text"],
@@ -436,6 +451,10 @@ textarea {
   border-radius: 2%;
 }
 
+#sharepg p {
+  margin-bottom: 5vh;
+}
+
 #reset:hover {
   color: #FBECBE;
   cursor: pointer;
@@ -451,6 +470,7 @@ textarea {
   position: absolute;
   left: -100vh;
   top: 50vh;
+  transform: translateY(-50%);
   width: 50%;
   padding: 4vh;
   font-size: 2vh;

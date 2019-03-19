@@ -29,6 +29,14 @@ var fact7 = document.querySelector('#fact7');
 var fact8 = document.querySelector('#fact8');
 var fact9 = document.querySelector('#fact9');
 var fact10 = document.querySelector('#fact10');
+var fact11 = document.querySelector('#fact11');
+var fact12 = document.querySelector('#fact12');
+var fact13 = document.querySelector('#fact13');
+var fact14 = document.querySelector('#fact14');
+var fact15 = document.querySelector('#fact15');
+var fact16 = document.querySelector('#fact16');
+var fact17 = document.querySelector('#fact17');
+var fact18 = document.querySelector('#fact18');
 
 var f1 = document.querySelector('#f1');
 var f2 = document.querySelector('#f2');
@@ -79,11 +87,6 @@ var controller = new ScrollMagic.Controller({
   }
 });
 
-var timeout = setTimeout(function() {
-  optn.style.opacity = '0.4';
-  optn2.style.opacity = '0.4';
-}, 5000)
-
 new ScrollMagic.Scene({
     triggerElement: '.one'
   })
@@ -130,7 +133,8 @@ bird1.addEventListener('click', function() {
   linkfive.href = '#five-1';
   linksix.href = '#six-1';
 
-  story1.style.left = '15%';
+  story1.style.left = '50%';
+  story1.style.transform = 'translateX(-50%)';
   story1.style.opacity = '1';
 
   icon.src = 'images/humming.svg';
@@ -153,7 +157,8 @@ bird2.addEventListener('click', function() {
   linkfive.href = '#five-2';
   linksix.href = '#six-2';
 
-  story2.style.left = '15%';
+  story2.style.left = '50%';
+  story2.style.transform = 'translateX(-50%)';
   story2.style.opacity = '1';
 
   icon.src = 'images/humminghov.svg';
@@ -176,7 +181,8 @@ bird3.addEventListener('click', function() {
   linkfive.href = '#five-3';
   linksix.href = '#six-3';
 
-  story3.style.left = '15%';
+  story3.style.left = '50%';
+  story3.style.transform = 'translateX(-50%)';
   story3.style.opacity = '1';
 
   icon.src = 'images/humminghov.svg';
@@ -297,7 +303,8 @@ icon.addEventListener('click', function() {
   linkfive.href = '#five-1';
   linksix.href = '#six-1';
 
-  story1.style.left = '15%';
+  story1.style.left = '50%';
+  story1.style.transform = 'translateX(-50%)';
   story1.style.opacity = '1';
   window.scrollTo(0, 0);
 
@@ -323,7 +330,8 @@ icon2.addEventListener('click', function() {
   linkfive.href = '#five-2';
   linksix.href = '#six-2';
 
-  story2.style.left = '15%';
+  story2.style.left = '50%';
+  story2.style.transform = 'translateX(-50%)';
   story2.style.opacity = '1';
   window.scrollTo(0, 0);
 
@@ -349,7 +357,8 @@ icon3.addEventListener('click', function() {
   linkfive.href = '#five-3';
   linksix.href = '#six-3';
 
-  story3.style.left = '15%';
+  story3.style.left = '50%';
+  story3.style.transform = 'translateX(-50%)';
   story3.style.opacity = '1';
   window.scrollTo(0, 0);
 
@@ -367,15 +376,17 @@ icon3.addEventListener('click', function() {
   story2.style.left = '-100%';
 })
 
-// fact1.addEventListener('mouseout', hide(fone))
-// fact1.addEventListener('mouseover', show(fone))
+// fact1.addEventListener('mouseover', show('fone'))
+// fact1.addEventListener('mouseout', hide('fone'))
 //
 // function show(f) {
+//   var f;
 //   f.style.right = '-40vh';
 //   f.style.opacity = '1';
 // }
 //
 // function hide(f) {
+//   var f;
 //   f.style.right = '-60vh';
 //   f.style.opacity = '0';
 // }
@@ -386,7 +397,7 @@ fact1.addEventListener('mouseover', function() {
 })
 
 fact1.addEventListener('mouseout', function() {
-  f1.style.right = '-60vh';
+  f1.style.right = '-43vh';
   f1.style.opacity = '0';
 })
 
@@ -396,7 +407,7 @@ fact2.addEventListener('mouseover', function() {
 })
 
 fact2.addEventListener('mouseout', function() {
-  f2.style.right = '-60vh';
+  f2.style.right = '-43vh';
   f2.style.opacity = '0';
 })
 
@@ -406,7 +417,7 @@ fact3.addEventListener('mouseover', function() {
 })
 
 fact3.addEventListener('mouseout', function() {
-  f3.style.right = '-60vh';
+  f3.style.right = '-43vh';
   f3.style.opacity = '0';
 })
 
@@ -416,7 +427,7 @@ fact4.addEventListener('mouseover', function() {
 })
 
 fact4.addEventListener('mouseout', function() {
-  f4.style.right = '-60vh';
+  f4.style.right = '-43vh';
   f4.style.opacity = '0';
 })
 
@@ -426,7 +437,7 @@ fact5.addEventListener('mouseover', function() {
 })
 
 fact5.addEventListener('mouseout', function() {
-  f5.style.right = '-60vh';
+  f5.style.right = '-43vh';
   f5.style.opacity = '0';
 })
 
@@ -436,7 +447,7 @@ fact6.addEventListener('mouseover', function() {
 })
 
 fact6.addEventListener('mouseout', function() {
-  f6.style.right = '-60vh';
+  f6.style.right = '-43vh';
   f6.style.opacity = '0';
 })
 
@@ -446,7 +457,7 @@ fact7.addEventListener('mouseover', function() {
 })
 
 fact7.addEventListener('mouseout', function() {
-  f7.style.right = '-60vh';
+  f7.style.right = '-43vh';
   f7.style.opacity = '0';
 })
 
@@ -456,7 +467,7 @@ fact8.addEventListener('mouseover', function() {
 })
 
 fact8.addEventListener('mouseout', function() {
-  f8.style.right = '-60vh';
+  f8.style.right = '-43vh';
   f8.style.opacity = '0';
 })
 
@@ -466,7 +477,7 @@ fact9.addEventListener('mouseover', function() {
 })
 
 fact9.addEventListener('mouseout', function() {
-  f9.style.right = '-60vh';
+  f9.style.right = '-43vh';
   f9.style.opacity = '0';
 })
 
@@ -476,8 +487,88 @@ fact10.addEventListener('mouseover', function() {
 })
 
 fact10.addEventListener('mouseout', function() {
-  f10.style.right = '-60vh';
+  f10.style.right = '-43vh';
   f10.style.opacity = '0';
+})
+
+fact11.addEventListener('mouseover', function() {
+  f11.style.right = '-40vh';
+  f11.style.opacity = '1';
+})
+
+fact11.addEventListener('mouseout', function() {
+  f11.style.right = '-43vh';
+  f11.style.opacity = '0';
+})
+
+fact12.addEventListener('mouseover', function() {
+  f12.style.right = '-40vh';
+  f12.style.opacity = '1';
+})
+
+fact12.addEventListener('mouseout', function() {
+  f12.style.right = '-43vh';
+  f12.style.opacity = '0';
+})
+
+fact13.addEventListener('mouseover', function() {
+  f13.style.right = '-40vh';
+  f13.style.opacity = '1';
+})
+
+fact13.addEventListener('mouseout', function() {
+  f13.style.right = '-43vh';
+  f13.style.opacity = '0';
+})
+
+fact14.addEventListener('mouseover', function() {
+  f14.style.right = '-40vh';
+  f14.style.opacity = '1';
+})
+
+fact14.addEventListener('mouseout', function() {
+  f14.style.right = '-43vh';
+  f14.style.opacity = '0';
+})
+
+fact15.addEventListener('mouseover', function() {
+  f15.style.right = '-40vh';
+  f15.style.opacity = '1';
+})
+
+fact15.addEventListener('mouseout', function() {
+  f15.style.right = '-43vh';
+  f15.style.opacity = '0';
+})
+
+fact16.addEventListener('mouseover', function() {
+  f16.style.right = '-40vh';
+  f16.style.opacity = '1';
+})
+
+fact16.addEventListener('mouseout', function() {
+  f16.style.right = '-43vh';
+  f16.style.opacity = '0';
+})
+
+fact17.addEventListener('mouseover', function() {
+  f17.style.right = '-40vh';
+  f17.style.opacity = '1';
+})
+
+fact17.addEventListener('mouseout', function() {
+  f17.style.right = '-43vh';
+  f17.style.opacity = '0';
+})
+
+fact18.addEventListener('mouseover', function() {
+  f18.style.right = '-40vh';
+  f18.style.opacity = '1';
+})
+
+fact18.addEventListener('mouseout', function() {
+  f18.style.right = '-43vh';
+  f18.style.opacity = '0';
 })
 
 optn.addEventListener('mouseover', function() {
@@ -489,6 +580,11 @@ optn2.addEventListener('mouseover', function() {
   optn2.style.opacity = '1';
   clearTimeout(timeout);
 })
+
+var timeout = setTimeout(function() {
+  optn.style.opacity = '0.4';
+  optn2.style.opacity = '0.4';
+}, 5000)
 
 optn.addEventListener('mouseout', function() {
   timeout = setTimeout(function() {
