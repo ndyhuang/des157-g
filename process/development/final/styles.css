@@ -371,6 +371,7 @@ header nav ul li p:hover {
 
 #aboutpg p {
   margin-bottom: 10%;
+  background: #062039;
 }
 
 #aboutpg p:nth-of-type(3), #aboutpg p:nth-of-type(4) {
@@ -384,13 +385,18 @@ header nav ul li p:hover {
 }
 
 #aboutpg ul li {
-  color: #ffcb77;
   margin-bottom: 5vh;
   background: #062039;
 }
 
+#aboutpg ul li p {
+  color: #ffcb77;
+  font-size: 2.2vh;
+}
+
 #aboutpg ul li a {
   color: #C4775C;
+  font-size: 2.5vh;
 }
 
 .form {
