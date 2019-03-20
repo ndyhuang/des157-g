@@ -270,6 +270,11 @@ bird1.addEventListener('click', function() {
   optn2.style.opacity = '1';
 
   intro.style.left = '-100%';
+
+  var timeout = setTimeout(function() {
+    optn.style.opacity = '0.4';
+    optn2.style.opacity = '0.4';
+  }, 5000)
 })
 
 bird2.addEventListener('click', function() {
@@ -314,6 +319,11 @@ bird2.addEventListener('click', function() {
   optn2.style.opacity = '1';
 
   intro.style.left = '-100%';
+
+  var timeout = setTimeout(function() {
+    optn.style.opacity = '0.4';
+    optn2.style.opacity = '0.4';
+  }, 5000)
 })
 
 bird3.addEventListener('click', function() {
@@ -358,6 +368,11 @@ bird3.addEventListener('click', function() {
   optn2.style.opacity = '1';
 
   intro.style.left = '-100%';
+
+  var timeout = setTimeout(function() {
+    optn.style.opacity = '0.4';
+    optn2.style.opacity = '0.4';
+  }, 5000)
 })
 
 hm.addEventListener('click', function() {
@@ -506,6 +521,11 @@ icon.addEventListener('click', function() {
   intro.style.left = '-100%';
   story2.style.left = '-100%';
   story3.style.left = '-100%';
+
+  var timeout = setTimeout(function() {
+    optn.style.opacity = '0.4';
+    optn2.style.opacity = '0.4';
+  }, 5000)
 })
 
 icon2.addEventListener('click', function() {
@@ -553,6 +573,11 @@ icon2.addEventListener('click', function() {
   intro.style.left = "-100%";
   story1.style.left = "-100%";
   story3.style.left = "-100%";
+
+  var timeout = setTimeout(function() {
+    optn.style.opacity = '0.4';
+    optn2.style.opacity = '0.4';
+  }, 5000)
 })
 
 icon3.addEventListener('click', function() {
@@ -600,6 +625,11 @@ icon3.addEventListener('click', function() {
   intro.style.left = '-100%';
   story1.style.left = '-100%';
   story2.style.left = '-100%';
+
+  var timeout = setTimeout(function() {
+    optn.style.opacity = '0.4';
+    optn2.style.opacity = '0.4';
+  }, 5000)
 })
 
 fact1.addEventListener('mouseover', function() {
@@ -791,11 +821,6 @@ optn2.addEventListener('mouseover', function() {
   optn2.style.opacity = '1';
   clearTimeout(timeout);
 })
-
-var timeout = setTimeout(function() {
-  optn.style.opacity = '0.4';
-  optn2.style.opacity = '0.4';
-}, 5000)
 
 optn.addEventListener('mouseout', function() {
   timeout = setTimeout(function() {
